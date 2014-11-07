@@ -160,6 +160,7 @@ p {
 }
 h1.cover-heading {
 	color: #ee5c5c;
+	text-shadow: 0 0 2px #DD6F6F;
 	font-weight: bold;
 }
 .about-me-legend {
@@ -167,4 +168,9 @@ h1.cover-heading {
 }
 .download-cv-button {
 	box-shadow: 1px 1px 2px 1px #A09D9D;
+	-webkit-animation-duration: 1s;
+}
+.download-cv-button:hover {
+	-webkit-animation-name: pulse;
+	-webkit-animation-iteration-count: infinite;
 }
