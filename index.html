@@ -1,132 +1,609 @@
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jorge Luis Rivera</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<!-- Custom fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	</head>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+	<body itemscope itemtype="http://schema.org/Person">
+		<script>
+			window.onload = function () {
+				var toggleFloatingMenu = function() {
+					$( '.js-floating-nav' ).toggleClass( 'is-visible' );
+					$( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+				};
 
-    <title>@develoser | Not just another web developer</title>
+				$( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+				$( ".js-tooltip" ).tooltip();
+				$( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+					e.preventDefault();
+					toggleFloatingMenu();
+				});
+				$( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+			}
+		</script>
+		<div class="container-fluid">
+			<div class="row main clearfix">
+				<a href="#" class="js-floating-nav-trigger floating-nav-trigger">
+					<i class="fa fa-bars"></i>
+					<span class="close-icon">&times;</span>
+				</a>
+				<nav class="floating-nav js-floating-nav">
+					<ul class="list-unstyled">
+						<li>
+							<a href="#about">
+								<i class="fa fa-user"></i>
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#work-experience">
+								<i class="fa fa-building"></i>
+								Work Experience
+							</a>
+						</li>
+						<li>
+							<a href="#skills">
+								<i class="fa fa-code"></i>
+								Skills
+							</a>
+						</li>
+						<li>
+							<a href="#education">
+								<i class="fa fa-mortar-board"></i>
+								Education
+							</a>
+						</li>
+						<li>
+							<a href="#awards">
+								<i class="fa fa-trophy"></i>
+								Awards
+							</a>
+						</li>
+						<li>
+							<a href="#publications">
+								<i class="fa fa-book"></i>
+								Publications
+							</a>
+						</li>
+						<li>
+							<a href="#interests">
+								<i class="fa fa-heart"></i>
+								Interests
+							</a>
+						</li>
+					</ul>
+				</nav>
 
-    <!-- CSS Generated from SASS. Cotains Bootstrap and custom theme -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- A set of cool animation rules -->
-    <link href="css/animate.css" rel="stylesheet">
-    
-    <!-- Custom fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+				<section class="col-md-3 card-wrapper profile-card-wrapper affix">
+					<div class="card profile-card">
+						<span class="profile-pic-container">
+							<div class="profile-pic">
+								<img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+									 alt="Jorge Luis Rivera" src="http://develoser.github.io/imgs/develoser.jpeg" itemprop="image">
+							</div>
 
-    <style id="holderjs-style" type="text/css"></style>
-</head>
+							<div class="name-and-profession">
+								<h3 class="text-center text-bolder name" itemprop="name"> Jorge Luis Rivera</h3>
+								<h5 class="text-muted text-center" itemprop="jobTitle">Sr. Frontend Developer</h5>
+							</div>
+						</span>
+						<hr>
 
-<body>
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <ul class="nav masthead-nav">
-                            <li class="active"><a href="#">Home</a>
-                            </li>
-                            <li><a href="#">CV</a>
-                            </li>
-                            <li><a href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="inner cover">
-                    <p>
-                        <img class="img-circle" alt="140x140" src="imgs/develoser.jpeg" style="width: 140px; height: 140px;">
-                    </p>
-                    <h1 class="cover-heading nickname animated zoomInDown"> <a href="https://twitter.com/develoser" target="_blank">@develoser</a></h1>
-                    <p class="lead about-me-legend">[ <a href="https://github.com/develoser" target="_blank">Web Developer</a>, husband, son, friend, gamer, reader, a designer from closet, audiophile, wannabe cinephile, catholic... ]</p>
-                    <p class="lead">
-                        <a href="https://www.dropbox.com/s/2hp4s96h9nob7x6/Curriculum%20vitae.docx?dl=0" target="_blank" class="btn btn-primary btn-lg download-cv-button">Download CV</a>
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Offshore Team Leader  <a href="http://www.softtek.com/" target="_blank">@Softtek</a> - Ags., Mex. - 2011 - Present</h3>
-                        <blockquote>
-                            <p>
-                                At Softtek I returned to my real passion: the web development.
-                            </p>
-                        </blockquote>
-                        <p>
-                            Due to the size and scope of the project (300,000+ users), in our development workflow we follow a SCRUM methodology in order to keep all the stakeholders aligned and in compliance with the project goals, so I have to talk directly with the client on daily basis.
-                        </p>
-                        <p>
-                            Based on my knowledge and experience in the fall of 2013 I became on offshore team leader, providing mentoring and coaching for my colleagues and technical references in the project. So the most of time you can find me coding, troubleshooting, coordinating people, helping up clients, following up issues, looking into git, etc.
-                        </p>
-                        <p>
-                            Just let’s say there is always something to do.
-                        </p>
-                        <p>&nbsp;</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-mid-12">
-                        <p>
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/JS.png" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/backbone.png" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/handlebars.png" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/sass.png" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/gruntjs.jpg" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/Git-Icon-1788C.png" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/svn.png" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/karma.png" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/node.jpg" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/logo_10gen_mongodb1.png" style="width: 60px; height: 60px;">
-                            <img class="img-circle img-technology" alt="60x60" src="imgs/python.png" style="width: 60px; height: 60px;">
-                        </p>
-                    </div>
-                </div>
-                <p>&nbsp;</p>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>From Junior Developer to Application Leader @SATV - Ags., Mex. - 2009 - 2011</h3>
-                        <blockquote>
-                            <p>
-                                Adventures in billing processes, call detail records and Cable Companies
-                            </p>
-                        </blockquote>
-                        <p>
-                            I started providing solutions related with Microsoft environment as .NET framework 2.0 - 4.0 (C# and ADO.NET) and SQL Server 2005-2008, reporting services and data mining using third party solutions like Crystal Reports for data visualization.
-                            <br>At SATV I ended up as application leader of one of the main solutions software for cable companies: SofTV System.
-                        </p>
-                        <p>
-                            That system was in charge of the process of transform CDRs (call details record) into useful application information, customer management and providing triple-play services (digital tv, telephony and internet). At the same time I was working on creating the billing process for those records for a several cities around México like: Monterrey, Saltillo, Veracruz, Aguascalientes, Merida, Michoacán, etc.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-mid-12">
-                        <p>
-                            <img class="img-circle" alt="60x60" src="imgs/dotnet-logo.png" style="width: 60px; height: 60px;">
-                            <img class="img-circle" alt="60x60" src="imgs/dotnet_ado.jpg" style="width: 60px; height: 60px;">
-                            <img class="img-circle" alt="60x60" src="imgs/Microsoft-SQL-Server.jpg" style="width: 60px; height: 60px;">
-                            <img class="img-circle" alt="60x60" src="imgs/crystalreports.png" style="width: 60px; height: 60px;">
-                        </p>
-                    </div>
-                </div>
-                <!--<div class="mastfoot">
-                    <div class="inner">
-                        <p>Short links: <a href="http://mx.linkedin.com/in/develoser">LinkedIn</a> | <a href="https://twitter.com/develoser">@develoser</a>.</p>
-                    </div>
-                </div>-->
-            </div>
-        </div>
-    </div>
+						<div class="contact-details clearfix">
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-</body>
+							<div class="detail">
+								<span class="icon">
+									<i class="fa fa-lg fa-location-arrow"></i>
+								</span>
 
+								<span class="info">
+									Loreto, Zacatecas,
+									MX
+								</span>
+							</div>
+
+							<div class="detail">
+								<span class="icon">
+									<i class="fa fa-lg fa-phone"></i>
+								</span>
+
+								<span class="info" itemprop="telephone">
+									(496) 96 10157
+								</span>
+							</div>
+
+							<div class="detail">
+								<span class="icon">
+									<i class="fa fa-lg fa-envelope"></i>
+								</span>
+
+								<span class="info">
+									<a href="mailto:develose@outlook.com" class="link-disguise" itemprop="email">develoser@outlook.com</a>
+								</span>
+							</div>
+
+							<div class="detail">
+								<span class="icon" title="Languages I speak">
+									<i class="fa fa-lg fa-language"></i>
+								</span>
+
+								<span class="info">
+									Spanish, English
+								</span>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="social-links text-center">
+							<a class="fa fa-linkedin fa-2x social-link link-linkedin"
+							   href="http://www.linkedin.com/in/develoser" target="_blank"></a>
+							<a class="fa fa-github fa-2x social-link link-github"
+							   href="//github.com/develoser" target="_blank"></a>
+							<a class="fa fa-twitter fa-2x social-link link-twitter"
+							   href="//twitter.com/develoser" target="_blank"></a>
+							<a class="fa fa-rss fa-2x social-link link-blog"
+							   href="http://develoser.github.io/" target="_blank"></a>
+						</div>
+					</div>
+				</section>
+
+				<section class="col-md-9 card-wrapper pull-right">
+					<div class="card background-card">
+						<h4 class="text-uppercase text-bolder">Background</h4>
+						<hr>
+
+						<div class="background-details">
+							<div class="detail" id="about">
+								<div class="icon">
+									<i class="fa fa-lg fa-user"></i>
+									<span class="mobile-title">About</span>
+								</div>
+								<div class="info">
+									<h4 class="title text-uppercase">
+										About
+									</h4>
+
+									<div class="content" itemprop="description">
+										Passionate Software Engineer with 6+ years of experience working on the IT sector. Web Developer, husband, son, friend, gamer, reader, a designer from closet, audiophile, wannabe cinephile, catholic...
+									</div>
+								</div>
+							</div>
+
+							<div class="detail" id="work-experience">
+								<div class="icon">
+									<i class="fa fa-lg fa-building"></i>
+									<span class="mobile-title">Work Experience</span>
+								</div>
+								<div class="info">
+									<h4 class="title text-uppercase">
+										Work Experience
+									</h4>
+
+									<ul class="list-unstyled">
+										<li class="card card-nested clearfix">
+											<div class="content has-sidebar">
+												<p class="clear-margin-sm">
+													<strong>Offshore Team Leader | Sr. Frontend Developer</strong>,&nbsp;
+													<a href="http://www.softtek.com"  target="_blank">Softtek</a>
+												</p>
+												<p class="text-muted visible-xs visible-sm">
+													<small>
+														<span class="space-right">
+															Nov, 2011 -
+															Present
+														</span>
+
+														<span>
+															<i class="fa fa-clock-o icon-left"></i>
+															3 years 2 months
+														</span>
+													</small>
+												</p>
+												<p>At Softtek I returned to my real passion: the web development.</p>
+												<p>Based on my knowledge and experience in the fall of 2013 I became on offshore team leader, providing mentoring and coaching for my colleagues and technical references in the project. So the most of time you can find me coding, troubleshooting, coordinating people, helping up clients, following up issues, looking into git, etc. Just let’s say there is always something to do.</p>
+												<p>Due to the size and scope of the project (300,000+ users), in our development workflow we follow a SCRUM methodology in order to keep all the stakeholders aligned and in compliance with the project goals, so I have to talk directly with the client on daily basis. </p>
+												<ul>
+													<li> Puppeteer: A dashboard-like web application that allow QA Team and Clients to turn on/off code features for our main application on demand. (BackboneJS, Handlebars, CSS3, Bootstrap, SASS, NodeJS, Express, Mongoose, MongoDB) </li>
+													<li> Unit Testing: Reduced the amount of bugs found at Stage or even Production environment using a TDD methodology (Karma, Jasmine, Sinon, PhantomJS) </li>
+													<li> ANT to GruntJS migration: Legacy build process took 25-30min to be completed. I led a migration process from ANT to GrunJS (a JS-written tasks automation tool) which reduced the process to just 30-45 secs. </li>
+												</ul>
+												<div class="skills-img-container">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/JS.png" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/backbone.png" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/handlebars.png" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/sass.png" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/gruntjs.jpg" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/Git-Icon-1788C.png" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/svn.png" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/karma.png" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/node.jpg" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/logo_10gen_mongodb1.png" style="width: 60px; height: 60px;">
+													<img class="img-circle img-technology" alt="60x60" src="http://develoser.github.io/imgs/python.png" style="width: 60px; height: 60px;">
+												</div>
+											</div>
+
+											<div class="sidebar text-muted text-center hidden-xs hidden-sm">
+												<p>
+													<strong>Joined:</strong>&nbsp;
+													Nov, 2011
+												</p>
+
+												<p>
+													<span class="label label-success">
+														Currently Working
+													</span>
+												</p>
+												<p>
+													<i class="fa fa-clock-o icon-left"></i>
+													3 years 2 months
+												</p>
+											</div>
+										</li>
+										<li class="card card-nested clearfix">
+											<div class="content has-sidebar">
+												<p class="clear-margin-sm">
+													<strong>Junior developer to Application leader</strong>,&nbsp;
+													Sistemas Administrativos para Televisón Restringida
+												</p>
+												<p class="text-muted visible-xs visible-sm">
+													<small>
+														<span class="space-right">
+															Mar, 2009 -
+															Nov, 2011
+														</span>
+
+														<span>
+															<i class="fa fa-clock-o icon-left"></i>
+															2 years 8 months
+														</span>
+													</small>
+												</p>
+												<p>I started providing solutions related with Microsoft environment as .NET framework 2.0 - 4.0 (C# and ADO.NET) and SQL Server 2005-2008, reporting services and data mining using third party solutions like Crystal Reports for data visualization. </p>
+												<p>At SATV I end up as application leader of one of the main solutions software for cable companies: SofTV System. That system was in charge of the process of transform CDRs (call details record) into useful application information, customer management and providing triple-play services (digital tv, telephony and internet). At the same time I was working on creating the billing process for those records for a several cities around México like: Monterrey, Saltillo, Veracruz, Aguascalientes, Mérida, Michoacán, etc.</p>
+												<div class="skills-img-container">
+													<img class="img-circle" alt="60x60" src="http://develoser.github.io/imgs/dotnet-logo.png" style="width: 60px; height: 60px;">
+													<img class="img-circle" alt="60x60" src="http://develoser.github.io/imgs/dotnet_ado.jpg" style="width: 60px; height: 60px;">
+													<img class="img-circle" alt="60x60" src="http://develoser.github.io/imgs/Microsoft-SQL-Server.jpg" style="width: 60px; height: 60px;">
+													<img class="img-circle" alt="60x60" src="http://develoser.github.io/imgs/crystalreports.png" style="width: 60px; height: 60px;">
+												</div>
+											</div>
+
+											<div class="sidebar text-muted text-center hidden-xs hidden-sm">
+												<p>
+													<strong>Joined:</strong>&nbsp;
+													Mar, 2009
+												</p>
+
+												<p>
+													<strong>Left:</strong>&nbsp;
+													Nov, 2011
+												</p>
+												<p>
+													<i class="fa fa-clock-o icon-left"></i>
+													2 years 8 months
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="detail" id="skills">
+								<div class="icon">
+									<i class="fa fa-lg fa-code"></i>
+									<span class="mobile-title">Skills</span>
+								</div>
+								<div class="info">
+									<h4 class="title text-uppercase">
+										Skills
+									</h4>
+
+									<div class="content">
+										<ul class="list-unstyled">
+											<li class="card card-nested card-skills">
+												<div class="skill-level js-tooltip" title="Master" data-placement="left">
+													<div class="skill-progress master">
+													</div>
+												</div>
+												<div class="skill-info">
+													<strong>Web Development</strong>
+
+													<div class="space-top labels">
+														<span class="label label-keyword">HTML</span>
+														<span class="label label-keyword">Javascript</span>
+														<span class="label label-keyword">BackboneJS</span>
+														<span class="label label-keyword">Underscore/LoDash</span>
+														<span class="label label-keyword">RequireJS</span>
+														<span class="label label-keyword">jQuery</span>
+														<span class="label label-keyword">CSS2/3</span>
+														<span class="label label-keyword">Handlebars (client side templating)</span>
+														<span class="label label-keyword">Karma</span>
+														<span class="label label-keyword">Jasmine</span>
+														<span class="label label-keyword">Sinon</span>
+														<span class="label label-keyword">PhantomJS</span>
+														<span class="label label-keyword">CasperJS</span>
+														<span class="label label-keyword">SVN</span>
+														<span class="label label-keyword">Git/GitFlow</span>
+														<span class="label label-keyword">JIRA (issue tracking system)</span>
+														<span class="label label-keyword">FishEye &amp; Crucibel (Peer Review)</span>
+														<span class="label label-keyword">NodeJS</span>
+														<span class="label label-keyword">Express</span>
+														<span class="label label-keyword">Mongoose</span>
+														<span class="label label-keyword">MongoDB</span>
+														<span class="label label-keyword">Agile (SCRUM)</span>
+														<span class="label label-keyword">i18n</span>
+														<span class="label label-keyword">Design Patterns</span>
+													</div>
+												</div>
+											</li>
+											<li class="card card-nested card-skills">
+												<div class="skill-info">
+													<strong>Miscrosoft .NET</strong>
+
+													<div class="space-top labels">
+														<span class="label label-keyword">C#</span>
+														<span class="label label-keyword">Visual Basic</span>
+														<span class="label label-keyword">.NET 2.0, 4.0</span>
+														<span class="label label-keyword">ADO.NET</span>
+														<span class="label label-keyword">MS SQL Server 2005-2008</span>
+														<span class="label label-keyword">Store procedures</span>
+														<span class="label label-keyword">Triggers</span>
+														<span class="label label-keyword">Views</span>
+														<span class="label label-keyword">Indexing</span>
+														<span class="label label-keyword">Queries</span>
+														<span class="label label-keyword">Common table expression</span>
+														<span class="label label-keyword">NTier Applications</span>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="detail" id="education">
+								<div class="icon">
+									<i class="fa fa-lg fa-mortar-board"></i>
+									<span class="mobile-title">Education</span>
+								</div>
+								<div class="info">
+									<h4 class="title text-uppercase">
+										Education
+									</h4>
+
+									<div class="content">
+										<ul class="list-unstyled">
+											<li class="card card-nested">
+												<div class="content has-sidebar">
+													<p class="clear-margin-sm">
+														<strong>Computer Science, Bachelor</strong>,&nbsp;
+														Instituto Tecnológico Superior de Zacatecas
+													</p>
+													<p class="visible-xs visible-sm text-muted">
+														<small>
+															Aug, 2005 -
+															Jan, 2009
+														</small>
+													</p>
+													<i></i>
+													<div class="space-top labels">
+														<span class="label label-keyword">PHP</span>
+														<span class="label label-keyword">MySQL</span>
+														<span class="label label-keyword">.NET</span>
+														<span class="label label-keyword">Software Engineering</span>
+													</div>
+												</div>
+												<div class="sidebar text-muted text-center hidden-xs hidden-sm">
+													<p>
+														<strong>Started:</strong>&nbsp;
+														Aug, 2005
+													</p>
+													<p>
+														<strong>Completion:</strong>&nbsp;
+														Jan, 2009
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="detail" id="awards">
+								<div class="icon">
+									<i class="fa fa-lg fa-trophy"></i>
+									<span class="mobile-title">Awards</span>
+								</div>
+								<div class="info">
+									<h4 class="title text-uppercase">
+										Awards
+									</h4>
+
+									<div class="content">
+										<ul class="list-unstyled">
+											<li class="card card-nested">
+												<div class="content has-sidebar">
+													<p class="clear-margin-sm" itemprop="award">
+														<strong>Certified MongoDB Developer</strong>,&nbsp;
+														10gen: The MongoDB Company
+													</p>
+													<p class="visible-xs visible-sm text-muted">
+														<small>
+															Awarded on: Dec 23, 2012
+														</small>
+													</p>
+													<p class="clear-margin"> Since one of the main technologies in my current project is MongoDB I wanted to learn about it and contribute with something, and for my luck the 10gen company (the creators of MongoDB) were offering a 2 months free course. So I took the course, worked hard and got my certificate2. Currently I’m able to help other developers with doubts or even decision-making about our MongoDB instance. </p>
+												</div>
+												<div class="sidebar text-muted text-center hidden-xs hidden-sm">
+													<p>
+														<strong>Awarded on:</strong>&nbsp;
+														Dec 23, 2012
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="detail" id="publications">
+								<div class="icon">
+									<i class="fa fa-lg fa-book"></i>
+									<span class="mobile-title">Publications</span>
+								</div>
+								<div class="info">
+									<h4 class="title text-uppercase">
+										Publications
+									</h4>
+
+									<div class="content">
+										<ul class="list-unstyled">
+											<li class="card card-nested">
+												<div class="content has-sidebar">
+													<p class="clear-margin-sm">
+														<strong>
+															<a href="https://github.com/develoser/Handlebars-ST2-Precompiler"  target="_blank">Handlebars precompiler (Sublime Text 2 Plugin)</a>
+														</strong>,&nbsp;
+														GitHub
+													</p>
+													<p class="visible-xs visible-sm text-muted">
+														<small>
+															Published on: Jan 25, 2013
+														</small>
+													</p>
+													<p class="clear-margin">I really like Sublime Text 2 as IDE and before we migrated to RequireJS and hbs loader we used to precompile the handlebars templates after any modification over and over again, it includes:</p>
+													<ul>
+														<li>Open shell (terminal, cmd, PowerShell, etc.)</li>
+														<li>Change directory to the template path</li>
+														<li>Type the compile commands</li>
+														<li>Open the generated file, and so on… boring!</li>
+													</ul>
+													<p> I looked for a nice Sublime Text 2 plugin. Bad luck, I did not found anyone, so I decided to write my own (Python + github1) and avoid wasting time in console, just right click and select “Precompile with Handlebars” and that’s it. Faster, better ;)</p>
+												</div>
+												<div class="sidebar text-muted text-center hidden-sm hidden-xs">
+													<p>
+														<strong>Published on:</strong>&nbsp;
+														Jan 25, 2013
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="detail" id="interests">
+								<div class="icon">
+									<i class="fa fa-lg fa-heart"></i>
+									<span class="mobile-title">Interests</span>
+								</div>
+								<div class="info">
+									<h4 class="title text-uppercase">
+										Interests
+									</h4>
+
+									<div class="content">
+										<ul class="list-unstyled">
+											<li class="card card-nested">
+												<p>
+													<strong>Music</strong>
+												</p>
+
+												<div class="space-top labels">
+													<span class="label label-keyword">Rock</span>
+													<span class="label label-keyword">Rap</span>
+													<span class="label label-keyword">Hip Hop</span>
+													<span class="label label-keyword">Reggae</span>
+													<span class="label label-keyword">IDM</span>
+													<span class="label label-keyword">Trip Hop</span>
+													<span class="label label-keyword">90&#x27;s</span>
+													<span class="label label-keyword">Mexican Regional</span>
+												</div>
+											</li>
+											<li class="card card-nested">
+												<p>
+													<strong>Reading</strong>
+												</p>
+
+												<div class="space-top labels">
+													<span class="label label-keyword">Dante Alighieri</span>
+													<span class="label label-keyword">Neal Stephenson</span>
+													<span class="label label-keyword">Max Brooks</span>
+													<span class="label label-keyword">Coelho</span>
+												</div>
+											</li>
+											<li class="card card-nested">
+												<p>
+													<strong>Movies</strong>
+												</p>
+
+												<div class="space-top labels">
+													<span class="label label-keyword">Pulp Fiction</span>
+													<span class="label label-keyword">Inglourious Basterds</span>
+													<span class="label label-keyword">From Dusk Till Dawn</span>
+													<span class="label label-keyword">Donnie Darko</span>
+													<span class="label label-keyword">Jurassic Park</span>
+													<span class="label label-keyword">La Oveja Negra</span>
+													<span class="label label-keyword">No desearas la mujer de tu hijo</span>
+												</div>
+											</li>
+											<li class="card card-nested">
+												<p>
+													<strong>Video Games</strong>
+												</p>
+
+												<div class="space-top labels">
+													<span class="label label-keyword">Shadows of the Colossus</span>
+													<span class="label label-keyword">Silent Hill</span>
+													<span class="label label-keyword">New Super Mario Bros Wii</span>
+													<span class="label label-keyword">Metal Gear Solid</span>
+												</div>
+											</li>
+											<li class="card card-nested">
+												<p>
+													<strong>Disneyland</strong>
+												</p>
+
+												<div class="space-top labels">
+													<span class="label label-keyword">Disneyland</span>
+													<span class="label label-keyword">Disney California Adventure</span>
+												</div>
+											</li>
+											<li class="card card-nested">
+												<p>
+													<strong>Process Improvement</strong>
+												</p>
+
+												<div class="space-top labels">
+													<span class="label label-keyword">Six Sigma</span>
+													<span class="label label-keyword">Green Belt</span>
+													<span class="label label-keyword">Design Patterns</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+	</body>
 </html>

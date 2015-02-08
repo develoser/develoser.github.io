@@ -1,0 +1,210 @@
+{
+	"basics": {
+		"name": "Jorge Luis Rivera",
+		"label": "Sr. Frontend Developer",
+		"picture": "http://develoser.github.io/imgs/develoser.jpeg",
+		"email": "develoser@outlook.com",
+		"phone": "(496) 96 10157",
+		"website": "http://develoser.github.io/",
+		"summary": "Passionate Software Engineer with 6+ years of experience working on the IT sector. Web Developer, husband, son, friend, gamer, reader, a designer from closet, audiophile, wannabe cinephile, catholic...",
+		"location": {
+			"address": "Mezquital #1511",
+			"postalCode": "98831",
+			"city": "Loreto",
+			"countryCode": "MX",
+			"region": "Zacatecas"
+		},
+		"profiles": [
+			{
+				"network": "Twitter",
+				"username": "develoser",
+				"url": "https://twitter.com/develoser"
+			},
+			{
+				"network": "GitHub",
+				"username": "develoser",
+				"url": "https://github.com/develoser"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "develoser",
+				"url": "http://www.linkedin.com/in/develoser"
+			}
+		]
+	},
+	"work": [
+		{
+			"company": "Softtek",
+			"position": "Offshore Team Leader | Sr. Frontend Developer",
+			"website": "http://www.softtek.com",
+			"startDate": "2011-11-21",
+			"summary": "At Softtek I returned to my real passion: the web development. Due to the size and scope of the project (300,000+ users), in our development workflow we follow a SCRUM methodology in order to keep all the stakeholders aligned and in compliance with the project goals, so I have to talk directly with the client on daily basis. Based on my knowledge and experience in the fall of 2013 I became on offshore team leader, providing mentoring and coaching for my colleagues and technical references in the project. So the most of time you can find me coding, troubleshooting, coordinating people, helping up clients, following up issues, looking into git, etc. Just let’s say there is always something to do.",
+			"highlights": [
+				"Puppeteer: A dashboard-like web application that allow QA Team and Clients to turn on/off code features for our main application on demand. (BackboneJS, Handlebars, CSS3, Bootstrap, SASS, NodeJS, Express, Mongoose, MongoDB)",
+				"Unit Testing: Reduced the amount of bugs found at Stage or even Production environment using a TDD methodology (Karma, Jasmine, Sinon, PhantomJS)",
+				"ANT to GruntJS migration: Legacy build process took 25-30min to be completed. I led a migration process from ANT to GrunJS (a JS-written tasks automation tool) which reduced the process to just 30-45 secs."
+			]
+		},
+		{
+			"company": "Sistemas Administrativos para Televisón Restringida",
+			"position": "Junior developer to Application leader",
+			"startDate": "2009-03-20",
+			"endDate": "2011-11-18",
+			"summary": "I started providing solutions related with Microsoft environment as .NET framework 2.0 - 4.0 (C# and ADO.NET) and SQL Server 2005-2008, reporting services and data mining using third party solutions like Crystal Reports for data visualization. At SATV I end up as application leader of one of the main solutions software for cable companies: SofTV System. That system was in charge of the process of transform CDRs (call details record) into useful application information, customer management and providing triple-play services (digital tv, telephony and internet). At the same time I was working on creating the billing process for those records for a several cities around México like: Monterrey, Saltillo, Veracruz, Aguascalientes, Mérida, Michoacán, etc."
+		}
+	],
+	"education": [
+		{
+			"institution": "Instituto Tecnológico Superior de Zacatecas",
+			"area": "Computer Science",
+			"studyType": "Bachelor",
+			"startDate": "2005-08-20",
+			"endDate": "2009-02-01",
+			"courses": [
+				"PHP",
+				"MySQL",
+				".NET",
+				"Software Engineering"
+			]
+		}
+	],
+	"awards": [
+		{
+			"title": "Certified MongoDB Developer",
+			"date": "2012-12-24",
+			"awarder": "10gen: The MongoDB Company",
+			"website": "https://s3.amazonaws.com/edu-cert.10gen.com/downloads/babadf7d23334fa09db68cd447ff2539/Certificate.pdf",
+			"summary": "Since one of the main technologies in my current project is MongoDB I wanted to learn about it and contribute with something, and for my luck the 10gen company (the creators of MongoDB) were offering a 2 months free course. So I took the course, worked hard and got my certificate2. Currently I’m able to help other developers with doubts or even decision-making about our MongoDB instance."
+		}
+	],
+	"publications": [
+		{
+			"name": "Handlebars precompiler (Sublime Text 2 Plugin)",
+			"publisher": "GitHub",
+			"releaseDate": "2013-01-25",
+			"website": "https://github.com/develoser/Handlebars-ST2-Precompiler",
+			"summary": "I really like Sublime Text 2 as IDE and before we migrated to RequireJS and hbs loader we used to precompile the handlebars templates after any modification over and over again, it includes () I looked for a nice Sublime Text 2 plugin. Bad luck, I did not found anyone, so I decided to write my own (Python + github1) and avoid wasting time in console, just right click and select “Precompile with Handlebars” and that’s it. Faster, better ;)"
+		}
+	],
+	"skills": [
+		{
+			"name": "Web Development",
+			"level": "Master",
+			"keywords": [
+				"HTML",
+				"Javascript",
+				"BackboneJS",
+				"Underscore/LoDash",
+				"RequireJS",
+				"jQuery",
+				"CSS2/3",
+				"Handlebars (client side templating)",
+				"Karma",
+				"Jasmine",
+				"Sinon",
+				"PhantomJS",
+				"CasperJS",
+				"SVN",
+				"Git/GitFlow",
+				"JIRA (issue tracking system)",
+				"FishEye & Crucibel (Peer Review)",
+				"NodeJS",
+				"Express",
+				"Mongoose",
+				"MongoDB",
+				"Agile (SCRUM)",
+				"i18n",
+				"Design Patterns"
+			]
+		},
+		{
+			"name": "Miscrosoft .NET",
+			"level": "Proficient",
+			"keywords": [
+				"C#",
+				"Visual Basic",
+				".NET 2.0, 4.0",
+				"ADO.NET",
+				"MS SQL Server 2005-2008",
+				"Store procedures",
+				"Triggers",
+				"Views",
+				"Indexing",
+				"Queries",
+				"Common table expression",
+				"NTier Applications"
+			]
+		}
+	],
+	"languages": [
+		{
+			"language": "Spanish",
+			"fluency": "Native speaker"
+		},
+		{
+			"language": "English",
+			"fluency": "Conversational speaker"
+		}
+	],
+	"interests": [
+		{
+			"name": "Music",
+			"keywords": [
+				"Rock",
+				"Rap",
+				"Hip Hop",
+				"Reggae",
+				"IDM",
+				"Trip Hop",
+				"90's",
+				"Mexican Regional"
+			]
+		},
+		{
+			"name": "Reading",
+			"keywords": [
+				"Dante Alighieri",
+				"Neal Stephenson",
+				"Max Brooks",
+				"Coelho"
+			]
+		},
+		{
+			"name": "Movies",
+			"keywords": [
+				"Pulp Fiction",
+				"Inglourious Basterds",
+				"From Dusk Till Dawn",
+				"Donnie Darko",
+				"Jurassic Park",
+				"La Oveja Negra",
+				"No desearas la mujer de tu hijo"
+			]
+		},
+		{
+			"name": "Video Games",
+			"keywords": [
+				"Shadows of the Colossus",
+				"Silent Hill",
+				"New Super Mario Bros Wii",
+				"Metal Gear Solid"
+			]
+		},
+		{
+			"name": "Disneyland",
+			"keywords": [
+				"Disneyland",
+				"Disney California Adventure"
+			]
+		},
+		{
+			"name": "Process Improvement",
+			"keywords": [
+				"Six Sigma",
+				"Green Belt",
+				"Design Patterns"
+			]
+		}
+
+	]
+}
