@@ -1,0 +1,21 @@
+{
+  "name": "develoser-resume",
+  "version": "0.0.0",
+  "authors": [
+    "Luis Rivera Bocanegra <develoser@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
