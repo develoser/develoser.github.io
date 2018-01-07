@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-06T18:19:28-06:00</updated><id>http://localhost:4000/</id><title type="html">Luis Rivera</title><subtitle>Web Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile and catholic</subtitle><entry><title type="html">TypeScript and AWS Lambda</title><link href="http://localhost:4000/typescript-and-aws-lambda/" rel="alternate" type="text/html" title="TypeScript and AWS Lambda" /><published>2017-12-29T00:00:00-06:00</published><updated>2017-12-29T00:00:00-06:00</updated><id>http://localhost:4000/typescript-and-aws-lambda</id><content type="html" xml:base="http://localhost:4000/typescript-and-aws-lambda/">&lt;p&gt;Eiler 2016 AWS Lambda only supported NodeJS v4.x and I wanted to take advantage of ES6. You could say: why didn’t you used BabelJS?… ok, you got me, I not only wanted ES6 classes, generators, arrows, etc. the more important thing that I wanted was &lt;a href=&quot;https://en.wikipedia.org/wiki/Dependency_injection&quot;&gt;dependency injection&lt;/a&gt; and the best way to did that at that time was having TypeScript and Inversify, but thats &lt;a href=&quot;http://develoser.mx/blog/typescript-dependency-injection&quot;&gt;another story&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-07T02:36:37-06:00</updated><id>http://localhost:4000/</id><title type="html">Luis Rivera</title><subtitle>Web Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile and catholic</subtitle><entry><title type="html">TypeScript and AWS Lambda</title><link href="http://localhost:4000/typescript-and-aws-lambda/" rel="alternate" type="text/html" title="TypeScript and AWS Lambda" /><published>2017-12-29T00:00:00-06:00</published><updated>2017-12-29T00:00:00-06:00</updated><id>http://localhost:4000/typescript-and-aws-lambda</id><content type="html" xml:base="http://localhost:4000/typescript-and-aws-lambda/">&lt;p&gt;Eiler 2016 AWS Lambda only supported NodeJS v4.x and I wanted to take advantage of ES6. You could say: why didn’t you used BabelJS?… ok, you got me, I not only wanted ES6 classes, generators, arrows, etc. the more important thing that I wanted was &lt;a href=&quot;https://en.wikipedia.org/wiki/Dependency_injection&quot;&gt;dependency injection&lt;/a&gt; and the best way to did it at that time was having TypeScript and Inversify, but thats another story.&lt;/p&gt;
 
 &lt;h3 id=&quot;what-do-i-need&quot;&gt;What do I need?&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;NodeJS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/typescript&quot;&gt;TypeScript package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/typescript&quot;&gt;TypeScript npm module&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;An &lt;a href=&quot;https://aws.amazon.com/account/&quot;&gt;AWS Account&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -44,7 +44,8 @@
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Simple class and interface&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now, we are able to create a simple class and its interface:&lt;/p&gt;
+
 &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Greeting&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IGreeting&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 
     &lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -59,23 +60,60 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;project-structure-so-far&quot;&gt;Project Structure so far:&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;project-folder
-│   tsconfig.json
-└───node_modules
-└───dist
-│   │   my-class.js
-│   
-└───src
-    │   my-class.ts
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;generate-javascript-files&quot;&gt;Generate JavaScript files&lt;/h3&gt;
+&lt;h3 id=&quot;generating-javascript-files&quot;&gt;Generating JavaScript files&lt;/h3&gt;
 
 &lt;p&gt;Execute the following command in the root directoy:&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; tsc &lt;span class=&quot;nt&quot;&gt;--sourcemap&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The above command will generate each corresponding ts file to js file in the folder that we specifed in the &lt;strong&gt;tsconfig.json&lt;/strong&gt; (“outDir”: “dist”) including the source mapping (why do I need source mapping? &lt;a href=&quot;http://develoser.mx/blog/debugging-typescript-with-vscode&quot;&gt;debugging&lt;/a&gt;)&lt;/p&gt;</content><author><name>luis</name></author><category term="blog" /><category term="aws" /><summary type="html">Eiler 2016 AWS Lambda only supported NodeJS v4.x and I wanted to take advantage of ES6. You could say: why didn’t you used BabelJS?… ok, you got me, I not only wanted ES6 classes, generators, arrows, etc. the more important thing that I wanted was dependency injection and the best way to did that at that time was having TypeScript and Inversify, but thats another story.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.esynergy-solutions.co.uk/sites/default/files/TS.png" /></entry></feed>
+&lt;p&gt;The above command will generate each corresponding ts file to js file in the folder that we specifed in the &lt;strong&gt;tsconfig.json&lt;/strong&gt; (“outDir”: “dist”). The &lt;strong&gt;tsc&lt;/strong&gt; command is available once we installed typescript globally.&lt;/p&gt;
+
+&lt;p&gt;The —sourcemap option is to include source mapping files. Why do I need source mapping?: &lt;a href=&quot;https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps&quot;&gt;debugging&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, this is the project structure so far:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;project-folder
+│   tsconfig.json
+└───node_modules/
+└───dist
+│   │   greeting.js
+│   
+└───src
+    │   greeting.ts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;At this point we can create a lambda handler file, which imports our just generated class:&lt;/p&gt;
+
+&lt;div class=&quot;language-ts highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Greeting&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'./src/greeting'&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greeting&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Greeting&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;any&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;succeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;succeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Greeting&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once again lets generate its corresponding js file. You already figured out that this could be a tedious tasks, it is actually, but we can easily solve it with a simple gulp file and a watch task:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'gulp'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'gulp-shell'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tsc:watch'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;'**/*.ts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tsc:run'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tsc:run'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;shell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tsc --sourcemap'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And don’t forget to add gulp to our package&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; npm i &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; gulp gulp-shell
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So now everytime we modify a .ts file its corresponding .js will be generated automagically by:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; gulp tsc:watch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>luis</name></author><category term="blog" /><category term="aws" /><summary type="html">Eiler 2016 AWS Lambda only supported NodeJS v4.x and I wanted to take advantage of ES6. You could say: why didn’t you used BabelJS?… ok, you got me, I not only wanted ES6 classes, generators, arrows, etc. the more important thing that I wanted was dependency injection and the best way to did it at that time was having TypeScript and Inversify, but thats another story.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.esynergy-solutions.co.uk/sites/default/files/TS.png" /></entry></feed>

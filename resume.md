@@ -7,11 +7,12 @@ layout: page
 
 <p>Passionate Software Engineer with 6+ years of experience working on the IT sector. Web Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile, catholic.</p>
 
-<p>I'm always opened for new adventures, <a href="http://develoser.mx/contact">reach out</a> your project details to me and I'll get back to you as soon as I can.</p>
+<p>I'm always opened for new adventures, <a href="mailto:develoser@gmail.com">reach out</a> your project details to me and I'll get back to you as soon as I can.</p>
 
 <h3>Working Experience</h3>
+<div class="experience--item">
 <h4>Fullstack Developer <strong>@</strong> <a href="http://dealerx.com/">DealerX</a></h4>
-<h5>Remote / Home Office - Jul 2014 to Present</h5>
+<h5>Remote / Home Office | Jul 2014 - Present</h5>
 
 <p>At DealerX I fulfilled one of my career dreams: <strong>Remote Work</strong> on an US based company. Besides that, they ask me to bring my experience on what I really love to do: JavaScript FTW! plus gave me the lead of experimental QA processes for an Edge-Analytics-Tool powered by several Amazon Services.</p>
 
@@ -21,18 +22,51 @@ layout: page
 
 <p>Every single piece of code has its own set of unit and integration testing, which allowed us to easily "taste" different approaches of architecture. Since the modules were no tied to any specific environment, we sometimes switched the code from be running over restify server to later as microservices using AWS Lambda + AWS API Gateway.</p>
 
-<p>Led by the better architehcture/solution for the current issues, I have implemented solutions using pure JavaScript with ES5, ES6, TypeScript and Python, being this one the perfect complement in my latest adventure: <i>Dynamic Advertising</i>.</p>
+<p>Led by the better architecture for current issues, I have implemented solutions using diferent languages like pure JavaScript with ES5, ES6, TypeScript and Python, being this one the perfect complement in my latest adventure: <i>Dynamic Advertising</i>.</p>
 
-<p> Right now I'm in charge (among other things) of the creation of Dynamic Advertisement for Automotive Inventories using Google AdWords and MIcorsoft Bing APIs everything handled by AWS Servies.  
+<p>Right now I'm in charge (among other things) of the creation of Dynamic Advertisement for Automotive Inventories using Google AdWords and Micorsoft Bing APIs everything handled by AWS Servies.  
 </p>
 
+<div class="skills-img-container">
+    <img class="img-technology" alt="60x60" src="/imgs/JS.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/angularjs.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/bower.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/protractor.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/selenium.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/jasminejs.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/node.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/aws-logo.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/gcloud.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/travis.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/python.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/ts-logo.png" style="width: 60px; height: 60px;">
+</div>
+
+</div>
+
+<div class="experience--item">
 <h4>Sr. Frontend Developer <strong>@</strong> <a href="http://unosqaure.com/">Unosquare</a></h4>
-<h5>Guadalajara, México - Feb 2014 to Jul 2014</h5>
+<h5>Guadalajara, México | Feb 2014 - Jul 2014</h5>
 
 <p>At the beginning of 2015 I joined Unosquare as Sr. Frontend Engineer, one of the faster growing companies in Portland and Guadalajara Mexico. I was quickly assigned to lead development work in charge to provide mobile friendy features for an internal website and tool, working directly with the UX team, COO, VP of sales and even the CEO. The result: a fresh new improved and well tested mobile friendy website guieded by SCRUM, hard work, love and the following tech stack:</p>
 
+<div class="skills-img-container">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/JS.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/angularjs.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/bower.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/sass.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/browserify.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/gulp.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/d3.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/protractor.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/livereload.png" style="width: 60px; height: 60px;">
+</div>
+
+</div>
+
+<div class="experience--item">
 <h4>Sr. Frontend Developer and Tech Lead <strong>@</strong> <a href="http://softtek.com/">Softtek</a></h4>
-<h5>Aguascalientes, México - Nov 2011 to Feb 2014</h5>
+<h5>Aguascalientes, México | Nov 2011 - Feb 2014</h5>
 
 <p>At Softtek I returned to my real passion: the web development.</p>
 <p>Due to the size and scope of the project (300,000+ users), in our development workflow we follow a SCRUM methodology in order to keep all the stakeholders aligned and in compliance with the project goals, so I have to talk directly with the client on daily basis. </p>
@@ -44,8 +78,27 @@ layout: page
     <li> <strong>ANT to GruntJS migration:</strong> Legacy build process took 25-30min to be completed. I led a migration process from ANT to GrunJS (a JS-written tasks automation tool) which reduced the process to just 30-45 secs. </li>
 </ul>
 
+<div class="skills-img-container">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/JS.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/backbone.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/handlebars.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/sass.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/gruntjs.jpg" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/Git-Icon-1788C.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/svn.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/karma.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/casperjs.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/node.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/logo_10gen_mongodb1.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/python.png" style="width: 60px; height: 60px;">
+</div>
+
+</div>
+
+<div class="experience--item">
 <h4>Junior Developer and Application Leader <strong>@</strong> <a href="https://www.google.com.mx/maps/place/Sistemas+Administrativos+Para+TV+Restringida/@21.9285028,-102.2996187,15z/data=!4m5!3m4!1s0x0:0x914784afcefe156!8m2!3d21.9285028!4d-102.2996187">SATV</a></h4>
-<h5>Aguascalientes, México - Mar 2009 to Nov 2011</h5>
+<h5>Aguascalientes, México | Mar 2009 - Nov 2011</h5>
 
 <p>I started providing solutions related with Microsoft environment as .NET framework 2.0 - 4.0 (C# and ADO.NET) and SQL Server 2005-2008, reporting services and data mining using third party solutions like Crystal Reports for data visualization. </p>
 <p>At SATV I end up as application leader of one of the main solutions software for cable companies: SofTV System. That system was in charge of the process of transform CDRs (call details record) into useful application information, customer management and providing triple-play services (digital tv, telephony and internet). At the same time I was working on creating the billing process for those records for a several cities around México like: Monterrey, Saltillo, Veracruz, Aguascalientes, Mérida, Michoacán, etc.</p>
+</div>
