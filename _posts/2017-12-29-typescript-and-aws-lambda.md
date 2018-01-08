@@ -175,7 +175,7 @@ npm run lambda dist/handler.json handler event.json
 
 You can now deploy your project either manually uploading a zip file or using Travis CI
 
-**Script to generate a zip file**
+**build.sh**
 ```shell
 rm -rf ./dist/node_modules
 cp -R ./node_modules ./dist/node_modules
