@@ -1,0 +1,10 @@
+.working-experience {
+    .working-experience--title {
+        &:after {
+            display: block;
+            margin-top: 20px;
+            content: " ";
+            border-bottom: 1px solid #000000;
+        }
+    }
+}

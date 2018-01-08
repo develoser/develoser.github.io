@@ -17,9 +17,11 @@ Eiler 2016 AWS Lambda only supported NodeJS v4.x and I wanted to take advantage 
 
 - [NodeJS](https://nodejs.org/en/)
 - [TypeScript npm module](https://www.npmjs.com/package/typescript)
+- [Gulp npm module](https://www.npmjs.com/package/gulp)
+- [Lambda runner in local](https://www.npmjs.com/package/aws-lambda-function-sandbox-runner)
 - An [AWS Account](https://aws.amazon.com/account/)
 
-A this point we are assuming you already have a current valid AWS Account from the which you could create a new Lambda service, also NodeJS installed and typescript installed globally, so let's start:
+A this point we are assuming you already have a current valid AWS Account from the which you could create a new Lambda service and also NodeJS installed, so let's start:
 
 ### Create a project
 
@@ -28,6 +30,7 @@ A this point we are assuming you already have a current valid AWS Account from t
 > cd project-folder
 > npm init
 > npm i -g typescript
+> npm i -S gulp aws-lambda-function-sandbox-runner
 ```
 
 ### Configure TypeScript
@@ -75,9 +78,11 @@ interface IGreeting {
 
 ```
 
+This is a pretty basic class, nothing special. We will save it as <strong>greeting.ts</strong> file under the <strong>src</strong> directory. In this directory we will place all typescript files.
+
 ### Generating JavaScript files
 
-Execute the following command in the root directoy:
+We have our class in typescript, but as we already know AWS Lambda only knows JavaScript, so lets generate js file from ts. In order to do that let's execute the following command in the root directoy:
 
 ```shell
 > tsc --sourcemap
@@ -94,7 +99,8 @@ project-folder
 │   tsconfig.json
 └───node_modules/
 └───dist
-│   │   greeting.js
+└──────src
+    │      greeting.js
 │   
 └───src
     │   greeting.ts
@@ -108,11 +114,13 @@ import { Greeting } from './src/greeting'
 const greeting = new Greeting();
 
 export const handler = (event: any, context: {succeed: Function, fail: Function}) => {
-    context.succeed(Greeting.greet(event.name));
+    context.succeed(greeting.greet(event.name));
 }
 ```
 
 Once again lets generate its corresponding js file. You already figured out that this could be a tedious tasks, it is actually, but we can easily solve it with a simple gulp file and a watch task:
+
+**Gulpfile.js**:
 
 ```javascript
 var gulp = require('gulp');
@@ -127,14 +135,81 @@ gulp.task('tsc:watch', function() {
 gulp.task('tsc:run', shell.task(['tsc --sourcemap']));
 ```
 
-And don't forget to add gulp to our package 
-
-```shell
-> npm i -S gulp gulp-shell
-```
-
-So now everytime we modify a .ts file its corresponding .js will be generated automagically by:
+Now everytime we modify a .ts file its corresponding .js will be generated automagically by:
 
 ```shell
 > gulp tsc:watch
+```
+
+We don't need to worry about generating .js files any more, it's transparent, just keep runing the gulp watch task.
+
+### Test our lambda in local
+
+With the handler file generated we are now able to test our lambda function in local before deploying it to AWS, for that we will take advantage of **aws-lambda-function-sandbox-runner** module.
+
+I have a npm script to execute lambda in local
+
+**package.json:**
+```json
+{
+    "scripts": {
+        ...
+        "lambda": "node ./scripts/lambda-local.js"
+        ...
+    }
+}
+```
+
+**lambda.js:**
+```javascript
+const runner = require('aws-lambda-function-sandbox-runner');
+runner.run(process.argv[2], process.argv[3], process.argv[4]);
+```
+
+**Execute the script:**
+```shell
+npm run lambda dist/handler.json handler event.json
+```
+
+### Deployment
+
+You can now deploy your project either manually uploading a zip file or using Travis CI
+
+**Script to generate a zip file**
+```shell
+rm -rf ./dist/node_modules
+cp -R ./node_modules ./dist/node_modules
+
+rm -rf compiled/
+mkdir compiled
+
+zip -r compiled/fb-mkt-leads.zip ./dist | grep 'deflated 9[0-9]\%'
+```
+
+**.travis.yml**
+```yaml
+language: node_js
+node_js:
+  - "6.10"
+
+install:
+  - npm install -g typescript@2.1.1
+  - npm install
+  - tsc --sourcemap
+
+before_deploy:
+  - . build.sh
+
+deploy:
+  - provider: s3
+    access_key_id: "123"
+    secret_access_key: "456"
+    bucket: "bucket-name"
+    skip_cleanup: true
+    region: us-east-1
+    local_dir: compiled
+    upload-dir: your-upload-path
+    acl: authenticated_read
+    on:
+      branch: master
 ```

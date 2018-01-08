@@ -9,7 +9,9 @@ layout: page
 
 <p>I'm always opened for new adventures, <a href="mailto:develoser@gmail.com">reach out</a> your project details to me and I'll get back to you as soon as I can.</p>
 
-<h3>Working Experience</h3>
+<div class="working-experience">
+
+<h3 class="working-experience--title">Working Experience</h3>
 <div class="experience--item">
 <h4>Fullstack Developer <strong>@</strong> <a href="http://dealerx.com/">DealerX</a></h4>
 <h5>Remote / Home Office | Jul 2014 - Present</h5>
@@ -101,4 +103,14 @@ layout: page
 
 <p>I started providing solutions related with Microsoft environment as .NET framework 2.0 - 4.0 (C# and ADO.NET) and SQL Server 2005-2008, reporting services and data mining using third party solutions like Crystal Reports for data visualization. </p>
 <p>At SATV I end up as application leader of one of the main solutions software for cable companies: SofTV System. That system was in charge of the process of transform CDRs (call details record) into useful application information, customer management and providing triple-play services (digital tv, telephony and internet). At the same time I was working on creating the billing process for those records for a several cities around México like: Monterrey, Saltillo, Veracruz, Aguascalientes, Mérida, Michoacán, etc.</p>
+
+<div class="skills-img-container">
+<img class="img-technology" alt="60x60" src="http://develoser.github.io/imgs/dotnet-logo.png" style="width: 60px; height: 60px;">
+<img class="img-technology" alt="60x60" src="http://develoser.github.io/imgs/dotnet_ado.jpg" style="width: 60px; height: 60px;">
+<img class="img-technology" alt="60x60" src="http://develoser.github.io/imgs/Microsoft-SQL-Server.jpg" style="width: 60px; height: 60px;">
+<img class="img-technology" alt="60x60" src="http://develoser.github.io/imgs/crystalreports.png" style="width: 60px; height: 60px;">
+</div>
+
+</div>
+
 </div>
