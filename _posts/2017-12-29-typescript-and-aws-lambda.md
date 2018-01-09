@@ -63,6 +63,7 @@ A this point we are assuming you already have a current valid AWS Account from t
 
 Now, we are able to create a simple class and its interface:
 
+**greeting.ts**:
 ```typescript
 export class Greeting implements IGreeting {
 
@@ -108,6 +109,7 @@ project-folder
 
 At this point we can create a lambda handler file, which imports our just generated class:
 
+**handler.ts**
 ```ts
 import { Greeting } from './src/greeting'
 
@@ -154,7 +156,7 @@ I have a npm script to execute lambda in local
 {
     "scripts": {
         ...
-        "lambda": "node ./scripts/lambda-local.js"
+        "lambda": "node ./scripts/lambda.js"
         ...
     }
 }
@@ -168,7 +170,7 @@ runner.run(process.argv[2], process.argv[3], process.argv[4]);
 
 **Execute the script:**
 ```shell
-npm run lambda dist/handler.json handler event.json
+npm run lambda dist/handler.js handler event.json
 ```
 
 ### Deployment
@@ -193,7 +195,7 @@ node_js:
   - "6.10"
 
 install:
-  - npm install -g typescript@2.1.1
+  - npm install -g typescript
   - npm install
   - tsc --sourcemap
 

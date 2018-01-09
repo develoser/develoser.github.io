@@ -5,7 +5,7 @@ layout: page
 
 ![Profile Image](https://pbs.twimg.com/profile_images/802230942014148608/D5hrji_S_400x400.jpg)
 
-<p>Passionate Software Engineer with 6+ years of experience working on the IT sector. Web Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile, catholic.</p>
+<p>Passionate Software Engineer with 7+ years of experience working on the IT sector. Web Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile, catholic.</p>
 
 <p>I'm always opened for new adventures, <a href="mailto:develoser@gmail.com">reach out</a> your project details to me and I'll get back to you as soon as I can.</p>
 
@@ -26,7 +26,7 @@ layout: page
 
 <p>Led by the better architecture for current issues, I have implemented solutions using diferent languages like pure JavaScript with ES5, ES6, TypeScript and Python, being this one the perfect complement in my latest adventure: <i>Dynamic Advertising</i>.</p>
 
-<p>Right now I'm in charge (among other things) of the creation of Dynamic Advertisement for Automotive Inventories using Google AdWords and Micorsoft Bing APIs everything handled by AWS Servies.  
+<p>Right now I'm in charge (among other things) of the creation of Dynamic Advertisement for Automotive Inventories using Google AdWords and Micorsoft Bing APIs everything handled by AWS Services.  
 </p>
 
 <div class="skills-img-container">
