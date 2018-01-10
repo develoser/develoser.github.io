@@ -19,6 +19,7 @@ Eiler 2016 AWS Lambda only supported NodeJS v4.x and I wanted to take advantage 
 - [TypeScript npm module](https://www.npmjs.com/package/typescript)
 - [Gulp npm module](https://www.npmjs.com/package/gulp)
 - [Lambda runner in local](https://www.npmjs.com/package/aws-lambda-function-sandbox-runner)
+- node and reflect-metadata type definitions
 - An [AWS Account](https://aws.amazon.com/account/)
 
 A this point we are assuming you already have a current valid AWS Account from the which you could create a new Lambda service and also NodeJS installed, so let's start:
@@ -29,8 +30,8 @@ A this point we are assuming you already have a current valid AWS Account from t
 > mkdir project-folder
 > cd project-folder
 > npm init
-> npm i -g typescript
-> npm i -S gulp aws-lambda-function-sandbox-runner
+> npm i -g typescript gulp
+> npm i -S gulp gulp-shell aws-lambda-function-sandbox-runner @types/node @types/reflect-metadata
 ```
 
 ### Configure TypeScript
@@ -168,25 +169,38 @@ const runner = require('aws-lambda-function-sandbox-runner');
 runner.run(process.argv[2], process.argv[3], process.argv[4]);
 ```
 
+**event.json:**
+```json
+{
+    "name": "Luis Rivera"
+}
+```
+
+
 **Execute the script:**
 ```shell
 npm run lambda dist/handler.js handler event.json
 ```
 
+If everything is setup right, you must see <i>Hello Luis Rivera!</i> output. If it is, congratulations, you are done!
+
 ### Deployment
 
-You can now deploy your project either manually uploading a zip file or using Travis CI
+You can now deploy your project either manually uploading a zip file or using Travis CI.
 
+The following script is used to generate the zip file:
 **build.sh**
 ```shell
 rm -rf ./dist/node_modules
 cp -R ./node_modules ./dist/node_modules
-
+s
 rm -rf compiled/
 mkdir compiled
 
-zip -r compiled/fb-mkt-leads.zip ./dist | grep 'deflated 9[0-9]\%'
+zip -r compiled/project-name.zip ./dist | grep 'deflated 9[0-9]\%'
 ```
+
+You can now upload your just generated zip file to S3 when defining your lambda, or if you are a Travis CI user you can have a .travis.yml file similar to this and it would handle the upload process for you, just in case your connection is not good enought (have in mind you need to also upload the whole <i>node_modules</i> folder).
 
 **.travis.yml**
 ```yaml
@@ -195,7 +209,7 @@ node_js:
   - "6.10"
 
 install:
-  - npm install -g typescript
+  - npm install -g typescript gulp
   - npm install
   - tsc --sourcemap
 
@@ -215,3 +229,16 @@ deploy:
     on:
       branch: master
 ```
+
+Remember setting the lambda handler poiting to the dist folder since it contains all js code.
+
+Handler reference:
+```
+dist/handler.handler
+```
+
+That's it, you are done! :D
+
+This was just a quickie about TypeScript and AWS Lambda, pretty basic setup stuff, in future posts we would talk about more complex samples, taking advantage of TypeScript for SOLID principles.
+
+Happy Coding!
