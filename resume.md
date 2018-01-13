@@ -24,7 +24,7 @@ layout: page
 
 <p>Every single piece of code has its own set of unit and integration testing, which allowed us to easily "taste" different approaches of architecture. Since the modules were no tied to any specific environment, we sometimes switched the code from be running over restify server to later as microservices using AWS Lambda + AWS API Gateway.</p>
 
-<p>Led by the better architecture for current issues, I have implemented solutions using diferent languages like pure JavaScript with ES5, ES6, TypeScript and Python, being this one the perfect complement in my latest adventure: <i>Dynamic Advertising</i>.</p>
+<p>Led by the better architecture for current issues, I have implemented solutions using diferent languages like pure JavaScript with ES5, ES6, TypeScript, JSX and Python, being this one the perfect complement in my latest adventure: <i>Dynamic Advertising</i>.</p>
 
 <p>Right now I'm in charge (among other things) of the creation of Dynamic Advertisement for Automotive Inventories using Google AdWords and Micorsoft Bing APIs everything handled by AWS Services.  
 </p>
