@@ -14,7 +14,7 @@ layout: page
 <h3 class="working-experience--title">Working Experience</h3>
 <div class="experience--item">
 <h4>Fullstack Developer <strong>@</strong> <a href="http://dealerx.com/">DealerX</a></h4>
-<h5>Remote / Home Office | Jul 2014 - Present</h5>
+<h5>Remote / Home Office | Jul 2015 - Present</h5>
 
 <p>At DealerX I fulfilled one of my career dreams: <strong>Remote Work</strong> on an US based company. Besides that, they ask me to bring my experience on what I really love to do: JavaScript FTW! plus gave me the lead of experimental QA processes for an Edge-Analytics-Tool powered by several Amazon Services.</p>
 
@@ -48,7 +48,7 @@ layout: page
 
 <div class="experience--item">
 <h4>Sr. Frontend Developer <strong>@</strong> <a href="http://unosqaure.com/">Unosquare</a></h4>
-<h5>Guadalajara, México | Feb 2014 - Jul 2014</h5>
+<h5>Guadalajara, México | Feb 2015 - Jul 2015</h5>
 
 <p>At the beginning of 2015 I joined Unosquare as Sr. Frontend Engineer, one of the faster growing companies in Portland and Guadalajara Mexico. I was quickly assigned to lead development work in charge to provide mobile friendy features for an internal website and tool, working directly with the UX team, COO, VP of sales and even the CEO. The result: a fresh new improved and well tested mobile friendy website guieded by SCRUM, hard work, love and the following tech stack:</p>
 
@@ -68,7 +68,7 @@ layout: page
 
 <div class="experience--item">
 <h4>Sr. Frontend Developer and Tech Lead <strong>@</strong> <a href="http://softtek.com/">Softtek</a></h4>
-<h5>Aguascalientes, México | Nov 2011 - Feb 2014</h5>
+<h5>Aguascalientes, México | Nov 2011 - Feb 2015</h5>
 
 <p>At Softtek I returned to my real passion: the web development.</p>
 <p>Due to the size and scope of the project (300,000+ users), in our development workflow we follow a SCRUM methodology in order to keep all the stakeholders aligned and in compliance with the project goals, so I have to talk directly with the client on daily basis. </p>
