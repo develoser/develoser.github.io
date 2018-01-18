@@ -17,7 +17,6 @@ resume-local: true
 resume-url: resume
 
 url: http://develoser.github.io
-# your url: http://deve.github.io
 
 permalink: /:title/
 
@@ -39,7 +38,7 @@ github: develoser
 instagram: develoser
 spotify: develoser
 linkedin: develoser
-email: develoser@gmail.com
+email: luis@develoser.me
 # google: mygoogle
 # pinterest: mypinterest
 # youtube: myyoutube
@@ -82,7 +81,7 @@ read-time: true
 show-tags: true
 
 # related posts inside a post?
-related: true
+# related: true
 
 # Display links for next and previous posts for the specified categories
 post-advance-links: [blog]

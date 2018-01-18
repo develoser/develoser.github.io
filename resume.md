@@ -7,7 +7,7 @@ layout: page
 
 <p>Passionate Software Engineer with 7+ years of experience working on the IT sector. Web Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile, catholic.</p>
 
-<p>I'm always opened for new adventures, <a href="mailto:develoser@gmail.com">reach out</a> your project details to me and I'll get back to you as soon as I can.</p>
+<p>I'm always opened for new adventures, <a href="mailto:luis@develoser.me">reach out</a> your project details to me and I'll get back to you as soon as I can.</p>
 
 <div class="working-experience">
 
@@ -24,7 +24,7 @@ layout: page
 
 <p>Every single piece of code has its own set of unit and integration testing, which allowed us to easily "taste" different approaches of architecture. Since the modules were no tied to any specific environment, we sometimes switched the code from be running over restify server to later as microservices using AWS Lambda + AWS API Gateway.</p>
 
-<p>Led by the better architecture for current issues, I have implemented solutions using diferent languages like pure JavaScript with ES5, ES6, TypeScript and Python, being this one the perfect complement in my latest adventure: <i>Dynamic Advertising</i>.</p>
+<p>Led by the better architecture for current issues, I have implemented solutions using different languages like pure JavaScript with ES5, ES6, TypeScript, JSX and Python, being this one the perfect complement in my latest adventure: <i>Dynamic Advertising</i>.</p>
 
 <p>Right now I'm in charge (among other things) of the creation of Dynamic Advertisement for Automotive Inventories using Google AdWords and Micorsoft Bing APIs everything handled by AWS Services.  
 </p>
@@ -50,7 +50,7 @@ layout: page
 <h4>Sr. Frontend Developer <strong>@</strong> <a href="http://unosqaure.com/">Unosquare</a></h4>
 <h5>Guadalajara, México | Feb 2015 - Jul 2015</h5>
 
-<p>At the beginning of 2015 I joined Unosquare as Sr. Frontend Engineer, one of the faster growing companies in Portland and Guadalajara Mexico. I was quickly assigned to lead development work in charge to provide mobile friendy features for an internal website and tool, working directly with the UX team, COO, VP of sales and even the CEO. The result: a fresh new improved and well tested mobile friendy website guieded by SCRUM, hard work, love and the following tech stack:</p>
+<p>At the beginning of 2014 I joined Unosquare as Sr. Frontend Engineer, one of the faster growing companies in Portland and Guadalajara Mexico. I was quickly assigned to lead development work in charge to provide mobile friendy features for an internal website and tool, working directly with the UX team, COO, VP of sales and even the CEO. The result: a fresh new improved and well tested mobile friendy website guieded by SCRUM, hard work, love and the following tech stack:</p>
 
 <div class="skills-img-container">
     <img class="img-circle img-technology" alt="60x60" src="/imgs/JS.png" style="width: 60px; height: 60px;">
