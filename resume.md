@@ -5,7 +5,7 @@ layout: page
 
 ![Profile Image](https://pbs.twimg.com/profile_images/802230942014148608/D5hrji_S_400x400.jpg)
 
-<p>Passionate Software Engineer with 7+ years of experience working on the IT sector. Web Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile, catholic.</p>
+<p>Passionate Software Engineer with 8+ years of experience working on the IT sector. Web Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile, catholic.</p>
 
 <p>I'm always opened for new adventures, <a href="mailto:luis@develoser.me">reach out</a> your project details to me and I'll get back to you as soon as I can.</p>
 
@@ -18,7 +18,7 @@ layout: page
 
 <p>At DealerX I fulfilled one of my career dreams: <strong>Remote Work</strong> on an US based company. Besides that, they ask me to bring my experience on what I really love to do: JavaScript FTW! plus gave me the lead of experimental QA processes for an Edge-Analytics-Tool powered by several Amazon Services.</p>
 
-<p>It's being an amazing experience, a mindset change, since moved to the dragon's cave 😜 (Backend).</p>
+<p>It's being an amazing experience, a mindset change, since moved to the dragon's cave (Backend).</p>
 
 <p>Discovered from first hand the benefits of the cloud, working with cutting-edge technologies like Google Cloud and Amazon Web Services.</p>
 
