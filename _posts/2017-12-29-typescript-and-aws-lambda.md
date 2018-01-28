@@ -214,20 +214,18 @@ install:
   - tsc --sourcemap
 
 before_deploy:
-  - . build.sh
+  . build.sh  
 
 deploy:
-  - provider: s3
-    access_key_id: "123"
-    secret_access_key: "456"
-    bucket: "bucket-name"
-    skip_cleanup: true
-    region: us-east-1
-    local_dir: compiled
-    upload-dir: your-upload-path
-    acl: authenticated_read
-    on:
-      branch: master
+  provider: lambda
+  function_name: "lambda-test"
+  region: "us-east-1"
+  role: "arn:aws:iam::0123456789012:role/lambda_basic_execution"
+  runtime: "nodejs6.10"
+  handler_name: "handler"
+  access_key_id: "AWS ACCESS KEY ID"
+  secret_access_key: "AWS SECRET ACCESS KEY"
+  zip: compiled/project-name.zip
 ```
 
 Remember setting the lambda handler poiting to the dist folder since it contains all js code.
@@ -237,7 +235,7 @@ Handler reference:
 dist/handler.handler
 ```
 
-That's it, you are done! :D
+That's it!
 
 This was just a quickie about TypeScript and AWS Lambda, pretty basic setup stuff, in future posts we would talk about more complex samples, taking advantage of TypeScript for SOLID principles.
 
