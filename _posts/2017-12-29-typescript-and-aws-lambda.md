@@ -222,17 +222,11 @@ deploy:
   region: "us-east-1"
   role: "arn:aws:iam::0123456789012:role/lambda_basic_execution"
   runtime: "nodejs6.10"
+  module_name: "dist/handler"
   handler_name: "handler"
   access_key_id: "AWS ACCESS KEY ID"
   secret_access_key: "AWS SECRET ACCESS KEY"
   zip: compiled/project-name.zip
-```
-
-Remember setting the lambda handler poiting to the dist folder since it contains all js code.
-
-Handler reference:
-```
-dist/handler.handler
 ```
 
 That's it!
