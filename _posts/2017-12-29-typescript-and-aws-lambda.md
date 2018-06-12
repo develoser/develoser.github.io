@@ -3,7 +3,7 @@ title: "TypeScript and AWS Lambda"
 layout: post
 date: 2017-12-29 00:00
 tag: aws
-image: http://www.esynergy-solutions.co.uk/sites/default/files/TS.png
+image: /imgs/ts-aws.png
 headerImage: true
 description: "TypeScript and Dependency Injection in AWS Lambda"
 category: blog
