@@ -50,7 +50,7 @@ layout: page
 <h4>Sr. Frontend Developer <strong>@</strong> <a href="http://unosqaure.com/">Unosquare</a></h4>
 <h5>Guadalajara, México | Feb 2015 - Jul 2015</h5>
 
-<p>At the beginning of 2014 I joined Unosquare as Sr. Frontend Engineer, one of the faster growing companies in Portland and Guadalajara Mexico. I was quickly assigned to lead development work in charge to provide mobile friendy features for an internal website and tool, working directly with the UX team, COO, VP of sales and even the CEO. The result: a fresh new improved and well tested mobile friendy website guieded by SCRUM, hard work, love and the following tech stack:</p>
+<p>At the beginning of 2015 I joined Unosquare as Sr. Frontend Engineer, one of the faster growing companies in Portland and Guadalajara Mexico. I was quickly assigned to lead development work in charge to provide mobile friendy features for an internal website and tool, working directly with the UX team, COO, VP of sales and even the CEO. The result: a fresh new improved and well tested mobile friendy website guieded by SCRUM, hard work, love and the following tech stack:</p>
 
 <div class="skills-img-container">
     <img class="img-circle img-technology" alt="60x60" src="/imgs/JS.png" style="width: 60px; height: 60px;">
