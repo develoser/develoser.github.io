@@ -18,15 +18,15 @@ layout: page
 
 <p>At DealerX I fulfilled one of my career dreams: <strong>Remote Work</strong> on an US based company. Besides that, they ask me to bring my experience on what I really love to do: JavaScript FTW! plus gave me the lead of experimental QA processes for an Edge-Analytics-Tool powered by several Amazon Services.</p>
 
-<p>It's being an amazing experience, a mindset change, since moved to the dragon's cave (Backend).</p>
+<p>I was quickly moved to the BackEnd team and it's being an amazing experience, a mindset change, moved to the dragon's cave 🐉</p>
 
 <p>Discovered from first hand the benefits of the cloud, working with cutting-edge technologies like Google Cloud and Amazon Web Services.</p>
 
-<p>Every single piece of code has its own set of unit and integration testing, which allowed us to easily "taste" different approaches of architecture. Since the modules were no tied to any specific environment, we sometimes switched the code from be running over restify server to later as microservices using AWS Lambda + AWS API Gateway.</p>
+<p>Every single piece of code has its own set of unit and integration testing, which allowed us to easily "taste" different approaches of architecture. Since the modules were no tied to any specific environment, we sometimes switched the code from be running over restify server to later as microservices using AWS Lambda + AWS API Gateway or lately as AWS Batch Job.</p>
 
 <p>Led by the better architecture for current issues, I have implemented solutions using different languages like pure JavaScript with ES5, ES6, TypeScript, JSX and Python, being this one the perfect complement in my latest adventure: <i>Dynamic Advertising</i>.</p>
 
-<p>Right now I'm in charge (among other things) of the creation of Dynamic Advertisement for Automotive Inventories using Google AdWords and Micorsoft Bing APIs everything handled by AWS Services.  
+<p>Right now I'm in charge (among other things) of the creation of Dynamic Advertisement for Automotive Inventories using Google AdWords and Facebook Business/Marketing API, everything handled by AWS and Magic. 🧙  
 </p>
 
 <div class="skills-img-container">
