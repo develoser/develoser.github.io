@@ -33,7 +33,7 @@ We are assuming you already have an existing initialized npm package, if not wha
 ```json
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "lib": ["es6", "dom"],
         "types": ["reflect-metadata"],
         "module": "commonjs",
@@ -135,7 +135,7 @@ We achieve that creating a hash-table-alike file. We are using Symbol for abstra
 *src/types.ts*
 ```typescript
 let TYPES = {
-    ILogger: Symbol("ILogger")
+    ILogger: Symbol("ILogger") // or using plain string: ILogger: "ILogger"
     // IInterfaceName: Symbol("IInterfaceNameUniqueIdentifier")
 };
 
@@ -158,6 +158,14 @@ import { Logger } from "./classes/logger.ts";
 var container = new Container();
 container.bind<ILogger>(TYPES.ILogger).to(Logger);
 export default container;
+```
+
+The *container.bind()* method is used for linking abstractions to its implementation. The default behavior is creating one instance of the implementation each time the class is being injected, but there are other varitions like: *.inSingletonScope()*
+
+```typescript
+// no matter how many times the class is being injected
+// it will always return a singleton 
+container.bind<ILogger>(TYPES.ILogger).to(Logger).inSingletonScope();
 ```
 
 ### Resolving Dependencies
@@ -183,7 +191,7 @@ container.bind<IHelloWorld>(TYPES.IHelloWorld).to(HelloWorld);
 ```
 to: *src/container.ts*
 
-Create *src/container.ts* file:
+Create *src/hello-world.ts* file:
 ```typescript
 import { injectable, inject } from "inversify";
 import { ILogger } from '../interfaces/logger.interface';
@@ -207,10 +215,11 @@ export class HelloWorld implements IHelloWorld {
 }
 ```
 
-As you can see we are not creating the class directly but instead just injecting it using the inversify *inject* method.
+As you can see we are not creating the class directly but instead just injecting it using the inversify *inject()* method.
 
 ### Time to test
 
+Everything is setup, so now we can create an entry point file, let's call it: *src/main.ts*:
 
 ```typescript
 import { container } from "./container.ts";
@@ -218,12 +227,14 @@ import { TYPES } from "./types.ts";
 import { IHelloWorld } from "./interfaces/hello-world.interface.ts";
 
 // Magically creates the HelloWorld class with all its dependencies
-let HelloWorld = container.get<IHelloWorld>(TYPES.IHelloWorld);
+let helloWorld = container.get<IHelloWorld>(TYPES.IHelloWorld);
 
-HelloWorld.sayHello(); // 2018-01-10 | Hello World with Inversify!
+helloWorld.sayHello(); // 2018-01-10 | Hello World with Inversify!
 
 ```
 
-That's it. This is the most basic sample of use of inversify, the reality is that inversify does a lot more and we can discuss more complex samples making use of snapshots, scope dependencies, injecting a factory, etc. Everything could be found in the inversify website: [http://inversify.io/](http://inversify.io/)
+And that's it. This is the most basic sample of use of inversify, the reality is that inversify does a LOT more and we can discuss more complex samples making use of snapshots, scope dependencies, injecting a factory, etc, but that could be the topic for future posts.
 
-Happy coding!
+Futher details could be found in the official InversifyJS website: [http://inversify.io/](http://inversify.io/)
+
+Happy coding! </>
