@@ -8,10 +8,9 @@ headerImage: true
 category: blog
 author: luis
 externalLink: false
-hidden: true
 ---
 
-In a [previous post](http://develoser.mx/blog/typescript-aws) we have already explained how to setup a simple TypeScript (TS) project running in AWS Lambda, this time we are going to take advantage of having TS and introduce the last but not least <a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)" target="_blank">SOLID</a> principle: <a href="https://en.wikipedia.org/wiki/Dependency_injection" target="_blank">Dependency Inversion/Injection (DI)</a>.
+In a [previous post](http://www.develoser.me/typescript-and-aws-lambda/) we have already explained how to setup a simple TypeScript (TS) project running in AWS Lambda, this time we are going to take advantage of having TS and introduce the last but not least <a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)" target="_blank">SOLID</a> principle: <a href="https://en.wikipedia.org/wiki/Dependency_injection" target="_blank">Dependency Inversion/Injection (DI)</a>.
 
 One of the situations that led me to TS instead of pure ES6 was the lack of a good library for DI. There are a lot of them ([Electrolyte](https://github.com/jaredhanson/electrolyte), [Spur-IoC](https://github.com/opentable/spur-ioc) among others) but all that I tested ended up looking like [monkey patch](https://en.wikipedia.org/wiki/Monkey_patch) in the fall of 2010, until [Inversify](http://inversify.io) arrived.
 
@@ -26,7 +25,7 @@ Let's get started.
 npm i -S inversify reflect-metada
 ```
 
-We are assuming you already have an existing initialized npm package, if not what are you awting for? (```npm init```)
+We are assuming you already have an existing initialized npm package, if not what are you waiting for? (```npm init```)
 
 > The InversifyJS type definitions are included in the inversify npm package. InversifyJS requires TypeScript 2.0 and the *experimentalDecorators*, *emitDecoratorMetadata*, *types* and *lib* compilation options in your tsconfig.json file:
 
@@ -122,7 +121,7 @@ export class Logger implements ILogger {
 
 At this point there's nothing special, only a pretty basic implemantion of the ILogger interface. We are wraping the global *console* function with our own logic and making use of the npm *chalk* module to give the output some nice colors based on the type of the log function do we need.
 
-But await! What is that *@injectable()* decorator used for? Well this is how we tell inversify that this is an *injectable* class and it could be *injected* by another class. 
+But wait! What is that *@injectable()* decorator used for? Well this is how we tell inversify that this is an *injectable* class and it could be *injected* by another class. 
 
 ### TYPES
 
