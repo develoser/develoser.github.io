@@ -16,10 +16,10 @@ layout: page
 <h4>Full Stack Developer at <a href="http://dealerx.com/">DealerX</a> for over a decade!</h4>
 <h5>Remote | Jul 2015 - Present</h5>
 
-<p>At DealerX I fulfilled one of my career dreams: <strong>Remote</strong> working for a US based startup.</p>
+<p>At DealerX, I fulfilled one of my career goals: working remotely for a U.S.-based startup and being part of its successful growth.</p>
 
 <p>
-DealerX is a company which offers custom software solutions to help dealers to increase their leads, presence and of course their sales, using custom marketing solutions, like:
+DealerX is a company that provides custom software solutions to help dealers increase their leads, online presence, and most importantly, their sales through tailored marketing solutions such as:
 </p>
 
 <ul>
@@ -31,12 +31,12 @@ DealerX is a company which offers custom software solutions to help dealers to i
 </ul>
 
 <p>
-Principal duties on my hands were more related to final marketing, third-party integrations and if it was required I got involve in the UI development as well. Mainly:
+My main duties focused on final marketing efforts, third-party integrations and when needed the UI development. Mainly:
 </p>
 
 <ul>
   <li>
-    <strong> Facebook Marketing API </strong>
+    <u> Facebook Marketing API </u>
     <ul>
       <li>Carousel Ads</li>
       <li>Catalogs and Feeds</li>
@@ -52,7 +52,7 @@ Principal duties on my hands were more related to final marketing, third-party i
   </li>
 
   <li>
-    <strong>Google Ads API</strong>
+    <u>Google Ads API</u>
     <ul>
       <li>
         Ads generation
@@ -72,13 +72,13 @@ Principal duties on my hands were more related to final marketing, third-party i
   </li>
 
   <li>
-    <strong> Vehicles Inventory </strong>
+    <u> Vehicles Inventory </u>
     <ul>
       <li>
         Data Extract, Map and Load
         <ul>
           <li>
-            Extract: Pulling dealers inventory from different sources
+            Extract: Pulling dealers inventory from different sources:
             <ul>
               <li>(S)FTP CSV files</li>
               <li>Http resource</li>
@@ -100,21 +100,23 @@ Principal duties on my hands were more related to final marketing, third-party i
         </ul>
       </li>
       <li>Exposing the new data as REST API for internal and external consumption</li>
+      <li>Rules engine, defining custom vehicle-sets based on: type, make, model, miles, body type, etc. and comparing values against supported operators like: greater-than, equals-to, between, etc, giving the dealer the ability to advertise the specific vehicles they desire at a granual level. </li>
+      <li>Full inventory web app with Angular2.</li>
     </ul>
   </li>
 
   <li>
-    <strong> Alerts System </strong>
+    <u> Alerts System </u>
     <ul>
       <li>Notify reliability of critical operations</li>
       <li>
-        Centralized Hub for visualizing alerts with metadata about: what and when happened and how the responsible person could solve it. Eg, just to name a few:
+        Delivered a centralized hub for visualizing alerts with metadata about: what and when happened and how the responsible team could solve it as soon as possible. Just to name a few scenarios:
         <ul>
           <li>Campaign could not be created</li>
           <li>AdSet Targeting with missing locations</li>
           <li>Creative contains invalid headlines/descriptions</li>
           <li>Lack for of permissions due to user role</li>
-          <li>Unshared assets</li>
+          <li>Unshared assets with dealer-accounts</li>
         </ul>
       </li>
     </ul>
