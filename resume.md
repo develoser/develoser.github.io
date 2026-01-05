@@ -1,11 +1,11 @@
 ---
-title: About
+title: Resume
 layout: page
 ---
 
 ![Profile Image](https://avatars.githubusercontent.com/u/3155428?v=4)
 
-<p>Passionate Software Engineer with 14+ years of experience working on the IT sector. Full Stack Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile & catholic.</p>
+<p>Passionate Software Engineer with 14+ years of experience working on the IT sector. Full Stack Developer, husband, son, friend, gamer, kindle fan, a designer from closet, automation enthusiastic, audiophile, wannabe cinephile & catholic.</p>
 
 <div class="working-experience">
 <h3 class="working-experience--title">
@@ -19,7 +19,7 @@ layout: page
 <p>At DealerX, I fulfilled one of my career goals: working remotely for a U.S.-based startup and being part of its successful growth.</p>
 
 <p>
-DealerX is a company that provides custom software solutions to help dealers increase their leads, online presence, and most importantly, their sales through tailored marketing solutions such as:
+DealerX is a company that provides custom software solutions to help dealers increase their leads, online presence and most importantly, their sales through tailored marketing solutions such as:
 </p>
 
 <ul>
@@ -101,7 +101,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
       </li>
       <li>Exposing the new data as REST API for internal and external consumption</li>
       <li>Rules engine, defining custom vehicle-sets based on: type, make, model, miles, body type, etc. and comparing values against supported operators like: greater-than, equals-to, between, etc, giving the dealer the ability to advertise the specific vehicles they desire at a granual level. </li>
-      <li>Full inventory web app with Angular2.</li>
+      <li>Full inventory web app with Angular2+.</li>
     </ul>
   </li>
 
@@ -121,6 +121,9 @@ My main duties focused on final marketing efforts, third-party integrations and 
       </li>
     </ul>
   </li>
+  <p>
+  These highlights represent key features I developed from scratch. Throughout more than a decade, I also contributed to numerous internal initiatives not detailed here.
+  </p>
 </ul>
 
 <div class="skills-img-container">
