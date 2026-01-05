@@ -1,33 +1,130 @@
 ---
-title: About
+title: Resume
 layout: page
 ---
 
-![Profile Image](https://pbs.twimg.com/profile_images/802230942014148608/D5hrji_S_400x400.jpg)
+![Profile Image](https://avatars.githubusercontent.com/u/3155428?v=4)
 
-<p>Passionate Software Engineer with 8+ years of experience working on the IT sector. Web Developer, husband, son, friend, gamer, Kindle fan, a designer from closet, audiophile, wannabe cinephile, catholic.</p>
-
-<p>I'm always opened for new adventures, <a href="mailto:luis@develoser.me">reach out</a> your project details to me and I'll get back to you as soon as I can.</p>
+<p>Passionate Software Engineer with 14+ years of experience working on the IT sector. Full Stack Developer, husband, son, friend, gamer, kindle fan, a designer from closet, automation enthusiastic, audiophile, wannabe cinephile & catholic.</p>
 
 <div class="working-experience">
-
-<h3 class="working-experience--title">Working Experience</h3>
+<h3 class="working-experience--title">
+    Working Experience
+</h3>
 <div class="experience--item">
-<h4>Fullstack Developer <strong>@</strong> <a href="http://dealerx.com/">DealerX</a></h4>
-<h5>Remote / Home Office | Jul 2015 - Present</h5>
 
-<p>At DealerX I fulfilled one of my career dreams: <strong>Remote Work</strong> on an US based company. Besides that, they ask me to bring my experience on what I really love to do: JavaScript FTW! plus gave me the lead of experimental QA processes for an Edge-Analytics-Tool powered by several Amazon Services.</p>
+<h4>Full Stack Developer at <a href="http://dealerx.com/">DealerX</a> for over a decade!</h4>
+<h5>Remote | Jul 2015 - Present</h5>
 
-<p>I was quickly moved to the BackEnd team and it's being an amazing experience, a mindset change, moved to the dragon's cave 🐉</p>
+<p>At DealerX, I fulfilled one of my career goals: working remotely for a U.S.-based startup and being part of its successful growth.</p>
 
-<p>Discovered from first hand the benefits of the cloud, working with cutting-edge technologies like Google Cloud and Amazon Web Services.</p>
-
-<p>Every single piece of code has its own set of unit and integration testing, which allowed us to easily "taste" different approaches of architecture. Since the modules were no tied to any specific environment, we sometimes switched the code from be running over restify server to later as microservices using AWS Lambda + AWS API Gateway or lately as AWS Batch Job.</p>
-
-<p>Led by the better architecture for current issues, I have implemented solutions using different languages like pure JavaScript with ES5, ES6, TypeScript, JSX and Python, being this one the perfect complement in my latest adventure: <i>Dynamic Advertising</i>.</p>
-
-<p>Right now I'm in charge (among other things) of the creation of Dynamic Advertisement for Automotive Inventories using Google AdWords and Facebook Business/Marketing API, everything handled by AWS and Magic. 🧙  
+<p>
+DealerX is a company that provides custom software solutions to help dealers increase their leads, online presence and most importantly, their sales through tailored marketing solutions such as:
 </p>
+
+<ul>
+  <li>Publishing Ads for: Programmatic, Facebook, Google, Microsoft and Email)</li>
+  <li>Identifying the behavior of online intents</li>
+  <li>Custom audiences curation</li>
+  <li>Sending leads</li>
+  <li>Among some many others...</li>
+</ul>
+
+<p>
+My main duties focused on final marketing efforts, third-party integrations and when needed the UI development. Mainly:
+</p>
+
+<ul>
+  <li>
+    <u> Facebook Marketing API </u>
+    <ul>
+      <li>Carousel Ads</li>
+      <li>Catalogs and Feeds</li>
+      <li>
+        Custom Audiences population
+        <ul>
+          <li>Email hash/Mobile ID</li>
+        </ul>
+      </li>
+      <li>Sending leads to CRMs</li>
+      <li>Reporting</li>
+    </ul>
+  </li>
+
+  <li>
+    <u>Google Ads API</u>
+    <ul>
+      <li>
+        Ads generation
+        <ul>
+          <li>Responsive Search Ads</li>
+          <li>Image Ads</li>
+        </ul>
+      </li>
+      <li>
+        User Lists population
+        <ul>
+          <li>Email hash/Mobile ID</li>
+        </ul>
+      </li>
+      <li>Reporting</li>
+    </ul>
+  </li>
+
+  <li>
+    <u> Vehicles Inventory </u>
+    <ul>
+      <li>
+        Data Extract, Map and Load
+        <ul>
+          <li>
+            Extract: Pulling dealers inventory from different sources:
+            <ul>
+              <li>(S)FTP CSV files</li>
+              <li>Http resource</li>
+              <li>Custom Provider</li>
+            </ul>
+          </li>
+          <li>
+            Map
+            <ul>
+              <li>Mapping incoming data into known formats</li>
+            </ul>
+          </li>
+          <li>
+            Load
+            <ul>
+              <li>Loading mapped data into our Database</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Exposing the new data as REST API for internal and external consumption</li>
+      <li>Rules engine, defining custom vehicle-sets based on: type, make, model, miles, body type, etc. and comparing values against supported operators like: greater-than, equals-to, between, etc, giving the dealer the ability to advertise the specific vehicles they desire at a granual level. </li>
+      <li>Full inventory web app with Angular2+.</li>
+    </ul>
+  </li>
+
+  <li>
+    <u> Alerts System </u>
+    <ul>
+      <li>Notify reliability of critical operations</li>
+      <li>
+        Delivered a centralized hub for visualizing alerts with metadata about: what and when happened and how the responsible team could solve it as soon as possible. Just to name a few scenarios:
+        <ul>
+          <li>Campaign could not be created</li>
+          <li>AdSet Targeting with missing locations</li>
+          <li>Creative contains invalid headlines/descriptions</li>
+          <li>Lack for of permissions due to user role</li>
+          <li>Unshared assets with dealer-accounts</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <p>
+  These highlights represent key features I developed from scratch. Throughout more than a decade, I also contributed to numerous internal initiatives not detailed here.
+  </p>
+</ul>
 
 <div class="skills-img-container">
     <img class="img-technology" alt="60x60" src="/imgs/JS.png" style="width: 60px; height: 60px;">
@@ -114,3 +211,9 @@ layout: page
 </div>
 
 </div>
+
+<hr />
+<p>I'm always opened for new adventures, <a href="mailto:develoser@gmail.com">reach out</a> your project details to me and I'll get back to you as soon as I can.</p>
+
+<p> Happy coding! 🧙 </p>
+
