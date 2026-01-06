@@ -3,9 +3,12 @@ title: Resume
 layout: page
 ---
 
-![Profile Image](https://avatars.githubusercontent.com/u/3155428?v=4)
+<div style="display: flex;align-items: center;justify-content: center;">
+  <img style="width: 320px; height: 320px; border-radius: 8%;" src="https://avatars.githubusercontent.com/u/3155428?v=4" alt="resume-pic">
+</div>
 
-<p>Passionate Software Engineer with 14+ years of experience working on the IT sector. Full Stack Developer, husband, son, friend, gamer, kindle fan, a designer from closet, automation enthusiastic, audiophile, wannabe cinephile & catholic.</p>
+<p>Passionate Software Engineer with 15+ years of experience working on the IT sector.</p>
+<p> <u> Full Stack Developer </u>, husband, son, friend, gamer, kindle fan, a designer from closet, automation enthusiastic, audiophile, wannabe cinephile & catholic.</p>
 
 <div class="working-experience">
 <h3 class="working-experience--title">
@@ -13,8 +16,8 @@ layout: page
 </h3>
 <div class="experience--item">
 
-<h4>Full Stack Developer at <a href="http://dealerx.com/">DealerX</a> for over a decade!</h4>
-<h5>Remote | Jul 2015 - Present</h5>
+<h4>Full Stack Developer @ <a href="http://dealerx.com/">DealerX</a> for over a decade!</h4>
+<h5>Remote | Jul 2015 - Dec 2025 | 10 years 6 months</h5>
 
 <p>At DealerX, I fulfilled one of my career goals: working remotely for a U.S.-based startup and being part of its successful growth.</p>
 
@@ -101,7 +104,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
       </li>
       <li>Exposing the new data as REST API for internal and external consumption</li>
       <li>Rules engine, defining custom vehicle-sets based on: type, make, model, miles, body type, etc. and comparing values against supported operators like: greater-than, equals-to, between, etc, giving the dealer the ability to advertise the specific vehicles they desire at a granual level. </li>
-      <li>Full inventory web app with Angular2+.</li>
+      <li>Full inventory web app with Angular.</li>
     </ul>
   </li>
 
@@ -135,6 +138,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
     <img class="img-technology" alt="60x60" src="/imgs/jasminejs.png" style="width: 60px; height: 60px;">
     <img class="img-technology" alt="60x60" src="/imgs/node.png" style="width: 60px; height: 60px;">
     <img class="img-technology" alt="60x60" src="/imgs/aws-logo.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/ddb.png" style="width: 60px; height: 60px;">
     <img class="img-technology" alt="60x60" src="/imgs/gcloud.png" style="width: 60px; height: 60px;">
     <img class="img-technology" alt="60x60" src="/imgs/travis.png" style="width: 60px; height: 60px;">
     <img class="img-circle img-technology" alt="60x60" src="/imgs/python.png" style="width: 60px; height: 60px;">
@@ -145,7 +149,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
 
 <div class="experience--item">
 <h4>Sr. Frontend Developer <strong>@</strong> <a href="https://www.unosquare.com/">Unosquare</a></h4>
-<h5>Guadalajara, México | Feb 2015 - Jul 2015</h5>
+<h5>Guadalajara, México | Feb 2015 - Jul 2015 | 5 months</h5>
 
 <p>At the beginning of 2015 I joined Unosquare as Sr. Frontend Engineer, one of the faster growing companies in Portland and Guadalajara Mexico. I was quickly assigned to lead development work in charge to provide mobile friendy features for an internal website and tool, working directly with the UX team, COO, VP of sales and even the CEO. The result: a fresh new improved and well tested mobile friendy website guieded by SCRUM, hard work, love and the following tech stack:</p>
 
@@ -165,7 +169,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
 
 <div class="experience--item">
 <h4>Sr. Frontend Developer and Tech Lead <strong>@</strong> <a href="http://softtek.com/">Softtek</a></h4>
-<h5>Aguascalientes, México | Nov 2011 - Feb 2015</h5>
+<h5>Aguascalientes, México | Nov 2011 - Feb 2015 | 3 years 5 months</h5>
 
 <p>At Softtek I returned to my real passion: the web development.</p>
 <p>Due to the size and scope of the project (300,000+ users), in our development workflow we follow a SCRUM methodology in order to keep all the stakeholders aligned and in compliance with the project goals, so I have to talk directly with the client on daily basis. </p>
@@ -196,7 +200,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
 
 <div class="experience--item">
 <h4>Junior Developer and Application Leader <strong>@</strong> <a href="https://www.google.com.mx/maps/place/Sistemas+Administrativos+Para+TV+Restringida/@21.9285028,-102.2996187,15z/data=!4m5!3m4!1s0x0:0x914784afcefe156!8m2!3d21.9285028!4d-102.2996187">SATV</a></h4>
-<h5>Aguascalientes, México | Mar 2009 - Nov 2011</h5>
+<h5>Aguascalientes, México | Mar 2009 - Nov 2011 | 2 years 7 months</h5>
 
 <p>I started providing solutions related with Microsoft environment as .NET framework 2.0 - 4.0 (C# and ADO.NET) and SQL Server 2005-2008, reporting services and data mining using third party solutions like Crystal Reports for data visualization. </p>
 <p>At SATV I end up as application leader of one of the main solutions software for cable companies: SofTV System. That system was in charge of the process of transform CDRs (call details record) into useful application information, customer management and providing triple-play services (digital tv, telephony and internet). At the same time I was working on creating the billing process for those records for a several cities around México like: Monterrey, Saltillo, Veracruz, Aguascalientes, Mérida, Michoacán, etc.</p>
