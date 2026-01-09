@@ -131,18 +131,20 @@ My main duties focused on final marketing efforts, third-party integrations and 
 
 <div class="skills-img-container">
     <img class="img-technology" alt="60x60" src="/imgs/JS.png" style="width: 60px; height: 60px;">
-    <img class="img-technology" alt="60x60" src="/imgs/angularjs.png" style="width: 60px; height: 60px;">
-    <img class="img-technology" alt="60x60" src="/imgs/bower.png" style="width: 60px; height: 60px;">
-    <img class="img-technology" alt="60x60" src="/imgs/protractor.png" style="width: 60px; height: 60px;">
-    <img class="img-technology" alt="60x60" src="/imgs/selenium.png" style="width: 60px; height: 60px;">
-    <img class="img-technology" alt="60x60" src="/imgs/jasminejs.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/angular2.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/react.png" style="width: 60px; height: 60px;">
     <img class="img-technology" alt="60x60" src="/imgs/node.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/ts-logo.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/jasminejs.png" style="width: 60px; height: 60px;">
+    <img class="img-circle img-technology" alt="60x60" src="/imgs/python.png" style="width: 60px; height: 60px;">
     <img class="img-technology" alt="60x60" src="/imgs/aws-logo.png" style="width: 60px; height: 60px;">
     <img class="img-technology" alt="60x60" src="/imgs/ddb.png" style="width: 60px; height: 60px;">
     <img class="img-technology" alt="60x60" src="/imgs/gcloud.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/docker.png" style="width: 60px; height: 60px;">
     <img class="img-technology" alt="60x60" src="/imgs/travis.png" style="width: 60px; height: 60px;">
-    <img class="img-circle img-technology" alt="60x60" src="/imgs/python.png" style="width: 60px; height: 60px;">
-    <img class="img-circle img-technology" alt="60x60" src="/imgs/ts-logo.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/Git-Icon-1788C.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/bower.png" style="width: 60px; height: 60px;">
+    <img class="img-technology" alt="60x60" src="/imgs/protractor.png" style="width: 60px; height: 60px;">
 </div>
 
 </div>
