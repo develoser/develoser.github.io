@@ -39,7 +39,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
 
 <ul>
   <li>
-    <u> Facebook Marketing API </u>
+    <u> Facebook Marketing API  (Python & AWS-Microservices)</u>
     <ul>
       <li>Carousel Ads</li>
       <li>Catalogs and Feeds</li>
@@ -55,7 +55,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
   </li>
 
   <li>
-    <u>Google Ads API</u>
+    <u>Google Ads API (Python & AWS-Microservices)</u>
     <ul>
       <li>
         Ads generation
@@ -75,7 +75,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
   </li>
 
   <li>
-    <u> Vehicles Inventory </u>
+    <u> Vehicles Inventory (NodeJS, TypeScript, AWS-Microservices & Angular)</u>
     <ul>
       <li>
         Data Extract, Map and Load
@@ -109,7 +109,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
   </li>
 
   <li>
-    <u> Alerts System </u>
+    <u> Alerts System (NodeJS, TypeScript, AWS-Microservices & React)</u>
     <ul>
       <li>Notify reliability of critical operations</li>
       <li>
