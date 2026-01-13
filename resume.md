@@ -7,8 +7,8 @@ layout: page
   <img style="width: 320px; height: 320px; border-radius: 8%;" src="https://avatars.githubusercontent.com/u/3155428?v=4" alt="resume-pic">
 </div>
 
-<p>Passionate Software Engineer with 15+ years of experience working on the IT sector.</p>
-<p> <u> Full Stack Developer </u>, husband, son, friend, gamer, kindle fan, a designer from closet, automation enthusiastic, audiophile, wannabe cinephile & catholic.</p>
+<p>Passionate Software Engineer with 15+ years of experience, building scalable & user-focused software end-to-end.</p>
+<p>Husband, son, friend, gamer, kindle fan, a designer from closet, automation enthusiastic, audiophile, wannabe cinephile & catholic.</p>
 
 <div class="working-experience">
 <h3 class="working-experience--title">
@@ -22,27 +22,20 @@ layout: page
 <p>At DealerX, I fulfilled one of my career goals: working remotely for a U.S.-based startup and being part of its successful growth.</p>
 
 <p>
-DealerX is a company that provides custom software solutions to help dealers increase their leads, online presence and most importantly, their sales through tailored marketing solutions such as:
-</p>
-
-<ul>
-  <li>Publishing Ads for: Programmatic, Facebook, Google, Microsoft and Email)</li>
-  <li>Identifying the behavior of online intents</li>
-  <li>Custom audiences curation</li>
-  <li>Sending leads</li>
-  <li>Among some many others...</li>
-</ul>
-
-<p>
-My main duties focused on final marketing efforts, third-party integrations and when needed the UI development. Mainly:
+My main duties focused on final marketing efforts, third-party integrations and delightful UI development. Mainly:
 </p>
 
 <ul>
   <li>
-    <u> Facebook Marketing API  (Python & AWS-Microservices)</u>
+    <u> Facebook Marketing & Google Ads API Integrations (Python & AWS-Microservices)</u>
     <ul>
-      <li>Carousel Ads</li>
-      <li>Catalogs and Feeds</li>
+      <li>Automate generation of:</li>
+      <ul>
+        <li>Carousel Ads</li>
+        <li>Catalogs and Feeds</li>
+        <li>Responsive Search Ads</li>
+        <li>Image Ads</li>
+      </ul>
       <li>
         Custom Audiences population
         <ul>
@@ -50,27 +43,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
         </ul>
       </li>
       <li>Sending leads to CRMs</li>
-      <li>Reporting</li>
-    </ul>
-  </li>
-
-  <li>
-    <u>Google Ads API (Python & AWS-Microservices)</u>
-    <ul>
-      <li>
-        Ads generation
-        <ul>
-          <li>Responsive Search Ads</li>
-          <li>Image Ads</li>
-        </ul>
-      </li>
-      <li>
-        User Lists population
-        <ul>
-          <li>Email hash/Mobile ID</li>
-        </ul>
-      </li>
-      <li>Reporting</li>
+      <li>Reporting/Stats</li>
     </ul>
   </li>
 
@@ -104,7 +77,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
       </li>
       <li>Exposing the new data as REST API for internal and external consumption</li>
       <li>Rules engine, defining custom vehicle-sets based on: type, make, model, miles, body type, etc. and comparing values against supported operators like: greater-than, equals-to, between, etc, giving the dealer the ability to advertise the specific vehicles they desire at a granual level. </li>
-      <li>Full inventory web app with Angular.</li>
+      <li>Full inventory SPA with Angular.</li>
     </ul>
   </li>
 
@@ -113,14 +86,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
     <ul>
       <li>Notify reliability of critical operations</li>
       <li>
-        Delivered a centralized hub for visualizing alerts with metadata about: what and when happened and how the responsible team could solve it as soon as possible. Just to name a few scenarios:
-        <ul>
-          <li>Campaign could not be created</li>
-          <li>AdSet Targeting with missing locations</li>
-          <li>Creative contains invalid headlines/descriptions</li>
-          <li>Lack for of permissions due to user role</li>
-          <li>Unshared assets with dealer-accounts</li>
-        </ul>
+        Delivered a centralized hub (SPA) for visualizing alerts with metadata about: what and when happened and how the responsible team could solve it as soon as possible. Just to name a few scenarios: Campaigns could not be created, AdSet Targeting with missing locations, invalid headlines/descriptions, lack for of permissions due to user role, unshared assets with dealer-accounts, etc.
       </li>
     </ul>
   </li>
