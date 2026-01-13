@@ -22,7 +22,7 @@ layout: page
 <p>At DealerX, I fulfilled one of my career goals: working remotely for a U.S.-based startup and being part of its successful growth.</p>
 
 <p>
-My main duties focused on system design, third-party APIs integrations and delightful UI development working closely with the Design Team, Product Owners, AdOps and a high-performance Development Team using Agile methodologies. Some projects I developed from the ground up:
+Focused on: system design, micro-services (AWS/GCP), third-party APIs integrations and delightful UI development working closely with the Design Team, Product Owners, AdOps and a high-performance Development Team using Agile methodologies. Some projects I developed from the ground up:
 </p>
 
 <ul>
