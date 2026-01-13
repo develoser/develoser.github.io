@@ -22,7 +22,7 @@ layout: page
 <p>At DealerX, I fulfilled one of my career goals: working remotely for a U.S.-based startup and being part of its successful growth.</p>
 
 <p>
-My main duties focused on final marketing efforts, third-party integrations and delightful UI development. Mainly:
+My main duties focused on system design, third-party APIs integrations and delightful UI development working closely with the Design Team, Product Owners, AdOps and a high-performance Development Team using Agile methodologies. Some projects I developed from the ground up:
 </p>
 
 <ul>
@@ -75,9 +75,9 @@ My main duties focused on final marketing efforts, third-party integrations and 
           </li>
         </ul>
       </li>
-      <li>Exposing the new data as REST API for internal and external consumption</li>
+      <li>Designed and exposed a RESTful API for internal and external consumption</li>
       <li>Rules engine, defining custom vehicle-sets based on: type, make, model, miles, body type, etc. and comparing values against supported operators like: greater-than, equals-to, between, etc, giving the dealer the ability to advertise the specific vehicles they desire at a granual level. </li>
-      <li>Full inventory SPA with Angular.</li>
+      <li>Full inventory SPA with Angular and RxJS</li>
     </ul>
   </li>
 
@@ -91,7 +91,7 @@ My main duties focused on final marketing efforts, third-party integrations and 
     </ul>
   </li>
   <p>
-  These highlights represent key features I developed from scratch. Throughout more than a decade, I also contributed to numerous internal initiatives not detailed here.
+  These highlights represent key features I developed from scratch. Throughout more than a decade, I also contributed to numerous internal initiatives not fully detailed here. 
   </p>
 </ul>
 
